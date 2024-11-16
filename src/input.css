@@ -347,10 +347,10 @@
             animation-timeline: view(95% 0%);
         }
         .scale-up{
-            animation-timeline: view(92% 0%);
+            animation-timeline: view(99% 0%);
         }
         .projects-animation{
-            animation-timeline: view(120% 0%);
+            animation: scale-up forwards;
         }
     }
     @media (max-width:791px){
