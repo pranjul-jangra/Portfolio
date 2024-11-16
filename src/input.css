@@ -81,6 +81,9 @@
     }
     .body{
         font-size: medium;
+        background-image: url(bg.jpg);
+        background-size: cover;
+        background-position: center;
     }
 
     /* media queries */
