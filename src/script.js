@@ -38,9 +38,6 @@ window.addEventListener('load', () => {
         }, 600);
     }
 
-
-
-
     setTimeout(() => {
         phone.classList.replace('scale-0', 'scale-1');
     }, 1100);
@@ -148,3 +145,67 @@ function contactScrollsUp() {
         };
     }, 200);
 };
+
+// animations for smaller screen sizes
+document.addEventListener('DOMContentLoaded', () => {
+    if (window.innerWidth < 592) {
+        let scaleUp = document.querySelectorAll('.scale-up');
+        let fadeDown = document.querySelectorAll('.fade-down');
+        let logos = document.querySelectorAll('.logos-animation');
+
+        scaleUp.forEach(item => {
+            item.classList.replace('scale-up', 'move-left')
+        });
+        fadeDown.forEach(item => {
+            item.classList.replace('fade-down', 'move-left')
+        });
+        logos.forEach(item => {
+            item.classList.replace('logos-animation', 'move-left')
+        });
+    } else {
+        let scaleUp = document.querySelectorAll('.anime-scale');
+        let fadeDown = document.querySelectorAll('.anime-fade');
+        let logos = document.querySelectorAll('.animate-logos');
+
+        scaleUp.forEach(item => {
+            item.classList.replace('move-left', 'scale-up')
+        });
+        fadeDown.forEach(item => {
+            item.classList.replace('move-left', 'fade-down')
+        });
+        logos.forEach(item => {
+            item.classList.replace('move-left', 'logos-animation')
+        });
+    }
+});
+window.addEventListener('resize', () => {
+    if (window.innerWidth < 592) {
+        let scaleUp = document.querySelectorAll('.scale-up');
+        let fadeDown = document.querySelectorAll('.fade-down');
+        let logos = document.querySelectorAll('.logos-animation');
+
+        scaleUp.forEach(item => {
+            item.classList.replace('scale-up', 'move-left')
+        });
+        fadeDown.forEach(item => {
+            item.classList.replace('fade-down', 'move-left')
+        });
+        logos.forEach(item => {
+            item.classList.replace('logos-animation', 'move-left')
+        });
+    } else {
+        let scaleUp = document.querySelectorAll('.anime-scale');
+        let fadeDown = document.querySelectorAll('.anime-fade');
+        let logos = document.querySelectorAll('.animate-logos');
+
+        scaleUp.forEach(item => {
+            item.classList.replace('move-left', 'scale-up')
+        });
+        fadeDown.forEach(item => {
+            item.classList.replace('move-left', 'fade-down')
+        });
+        logos.forEach(item => {
+            item.classList.replace('move-left', 'logos-animation')
+        });
+    }
+})
