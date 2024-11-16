@@ -717,13 +717,6 @@ video {
   }
 }
 
-.logos-animation{
-  transform: scale(0.3);
-  filter: blur(8px) opacity(0.4);
-  animation: logoAnimate forwards;
-  animation-timeline: view(98% 2%);
-}
-
 @keyframes logoAnimate{
   100%{
     transform: scale(1);
@@ -757,13 +750,6 @@ video {
     transform: scale(1);
     filter: blur(0);
   }
-}
-
-.projects-animation{
-  transform: scale(0.2) translateY(10vh);
-  filter: blur(4px);
-  animation: animateProjects forwards;
-  animation-timeline: view(97% 2%);
 }
 
 @keyframes animateProjects{
@@ -834,12 +820,6 @@ video {
 
   .scale-up{
     transform: scale(1);
-    filter: blur(0);
-    animation: none;
-  }
-
-  .projects-animation{
-    transform: scale(1) translateY(0);
     filter: blur(0);
     animation: none;
   }
@@ -981,8 +961,8 @@ video {
   width: 60vw;
 }
 
-.w-\[70\%\] {
-  width: 70%;
+.w-\[80\%\] {
+  width: 80%;
 }
 
 .w-\[80vw\] {
@@ -1004,10 +984,6 @@ video {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-\[80\%\] {
-  width: 80%;
 }
 
 .grow {
@@ -1301,11 +1277,6 @@ video {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
 }
 
 .font-bold {

@@ -319,12 +319,6 @@
             filter: blur(0);
         }
     }
-    .projects-animation{
-        transform: scale(0.2) translateY(10vh);
-        filter: blur(4px);
-        animation: animateProjects forwards;
-        animation-timeline: view(97% 2%);
-    }
     @keyframes animateProjects{
         to{
             transform: scale(1) translateY(0);
@@ -377,11 +371,6 @@
         }
         .scale-up{
             transform: scale(1);
-            filter: blur(0);
-            animation: none;
-        }
-        .projects-animation{
-            transform: scale(1) translateY(0);
             filter: blur(0);
             animation: none;
         }
