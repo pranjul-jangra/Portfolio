@@ -785,15 +785,15 @@ video {
   }
 
   .logos-animation{
-    animation-timeline: view(99% 1%);
+    animation-timeline: view(99% 0%);
   }
 
   .fade-down{
-    animation-timeline: view(95% 1%);
+    animation-timeline: view(95% 0%);
   }
 
   .scale-up{
-    animation-timeline: view(92% 2%);
+    animation-timeline: view(92% 0%);
   }
 
   .projects-animation{
