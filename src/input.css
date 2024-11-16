@@ -331,8 +331,21 @@
             filter: blur(0);
         }
     }
+    .footer-text{
+        @apply text-2xl font-semibold;
+    }
 
     /* media queries */
+    @media (max-width:671px){
+        .footer-text{
+            @apply text-lg font-medium;
+        }
+    }
+    @media (max-width:591px){
+        .footer-text{
+            @apply text-sm font-normal;
+        }
+    }
     @media (max-width:1152px){
         .grid-container{
             grid-template-columns: repeat(auto-fill, 150px);

@@ -773,7 +773,29 @@ video {
   }
 }
 
+.footer-text {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+}
+
 /* media queries */
+
+@media (max-width:671px){
+  .footer-text {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 500;
+  }
+}
+
+@media (max-width:591px){
+  .footer-text {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 400;
+  }
+}
 
 @media (max-width:1152px){
   .grid-container{
@@ -982,6 +1004,10 @@ video {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-\[80\%\] {
+  width: 80%;
 }
 
 .grow {
@@ -1262,11 +1288,6 @@ video {
   font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -1280,16 +1301,6 @@ video {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
 }
 
 .font-bold {
