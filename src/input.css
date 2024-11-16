@@ -142,6 +142,12 @@
             height: 10rem;
         }
     }
+    @media (max-width:791px){
+        .contact-ref{
+            position: relative;
+            margin-top: 4rem;
+        }
+    }
 }
 
 
@@ -262,11 +268,14 @@
         display: flex;
         gap: 1.25rem;
     }
+    .home-section-height{
+        height: 100vh;
+    }
     .logos-animation{
         transform: scale(0.3);
         filter: blur(8px) opacity(0.4);
         animation: logoAnimate forwards;
-        animation-timeline: view(98% 4%);
+        animation-timeline: view(98% 2%);
     }
     @keyframes logoAnimate{
         100%{
@@ -278,7 +287,7 @@
         filter: blur(8px) opacity(0.7);
         transform: translateY(70px);
         animation: fadeDown forwards;
-        animation-timeline: view(83% 4%);
+        animation-timeline: view(85% 2%);
     }
     @keyframes fadeDown{
         100%{
@@ -290,7 +299,7 @@
         transform: scale(0.2);
         filter: blur(0.7px);
         animation: up forwards;
-        animation-timeline: view(80% 4%);
+        animation-timeline: view(83% 2%);
     }
     @keyframes up{
         to{
@@ -302,7 +311,7 @@
         transform: scale(0.2) translateY(10vh);
         filter: blur(4px);
         animation: animateProjects forwards;
-        animation-timeline: view(97% 4%);
+        animation-timeline: view(97% 2%);
     }
     @keyframes animateProjects{
         to{
@@ -331,9 +340,26 @@
         .grid-container{
             grid-template-columns: repeat(auto-fill, 80px);
         }
+        .logos-animation{
+            animation-timeline: view(99% 1%);
+        }
+        .fade-down{
+            animation-timeline: view(95% 1%);
+        }
+        .scale-up{
+            animation-timeline: view(92% 2%);
+        }
+        .projects-animation{
+            animation-timeline: view(120% 0%);
+        }
     }
-    @media (max-width:773px){
+    @media (max-width:791px){
         .home-container{
+            flex-direction: column;
+            margin-top: 5.3rem;
+        }
+        .home-section-height{
+            height: fit-content;
             flex-direction: column;
         }
     }
