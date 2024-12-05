@@ -695,6 +695,14 @@ video {
   }
 }
 
+@media (max-width: 476px) {
+  .button {
+    &::before{
+      left: -45vw;
+    }
+  }
+}
+
 .home-container {
   display: flex;
   gap: 1.25rem;
