@@ -30,9 +30,6 @@
     .name-in-nav {
         font-size: 1.9rem;
     }
-    .about-section-width {
-        width: 80vw;
-    }
     .gradient {
         background-image: conic-gradient(red, green, yellow, red);
     }
@@ -66,8 +63,11 @@
         margin-bottom: 2rem;
         padding-right: 20px;
     }
-    .head-text {
+    .margin-left-7rem {
         margin-left: 7rem;
+    }
+    .padding-left-7rem {
+        padding-left: 7rem;
     }
     .projects-container {
         width: 100%;
@@ -144,17 +144,17 @@
         .nav-links {
             display: none;
         }
-        .head-text {
+        .margin-left-7rem {
             margin-left: 3rem;
+        }
+        .padding-left-7rem {
+            padding-left: 3rem;
         }
         .skills-description {
             margin-left: 3rem;
         }
     }
     @media (max-width: 769px) {
-        .projects-container {
-            padding-left: 3rem;
-        }
         .img-parent {
             width: 10rem;
             height: 10rem;
@@ -215,9 +215,9 @@
         filter: brightness(0.5);
     }
     .grid-container {
-        padding-inline: 100px;
+        padding-right: 30px;
         display: grid;
-        grid-template-columns: repeat(auto-fill, 150px);
+        grid-template-columns: repeat(auto-fill, minmax(150px,1fr));
         gap: 50px;
         & > div {
             position: relative;
@@ -265,7 +265,7 @@
         border-radius: 0.5rem;
         font-weight: 500;
         overflow: hidden;
-        transition: all 0.4s;
+        transition: all 0.5s;
         position: relative;
         &::before {
             content: "";
@@ -276,7 +276,7 @@
             position: absolute;
             top: -220%;
             left: -55%;
-            transition: all 0.4s;
+            transition: all 0.7s;
         }
         &:hover {
             border: 2px solid rgba(255, 255, 0, 0.74);
@@ -344,10 +344,8 @@
     }
     @media (max-width: 592px) {
         .grid-container {
-            padding-inline: 50px;
             column-gap: 4vw;
             row-gap: 10vw;
-            grid-template-columns: repeat(auto-fill, 90px);
         }
         .logos-animation {
             transform: scale(1);
