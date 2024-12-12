@@ -1564,7 +1564,7 @@ video {
 .img-animation {
   --s: 5px;
   position: absolute;
-  width: 103%;
+  width: 101%;
   display: grid;
   aspect-ratio: 1;
   border-radius: 50%;
