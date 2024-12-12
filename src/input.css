@@ -11,93 +11,101 @@
         scrollbar-width: 0px;
         -ms-overflow-style: none;
     }
-.loader {
-    position: relative;
-    box-sizing: border-box;
-    background-clip: padding-box;
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
-    border: 4px solid rgba(255, 255, 255, 0.1);
-    -webkit-mask: linear-gradient(rgba(0, 0, 0, 0.1), #000000 90%);
-    transform-origin: 50% 60%;
-    transform: perspective(200px) rotateX(45deg);
-    animation: spinner-wiggle 1.2s infinite;
-  }
-  
-  .loader:before,
-  .loader:after {
-    content: "";
-    position: absolute;
-    margin: -4px;
-    box-sizing: inherit;
-    width: inherit;
-    height: inherit;
-    border-radius: inherit;
-    opacity: .05;
-    border: inherit;
-    border-color: transparent;
-    animation: spinner-spin 1.2s cubic-bezier(0.6, 0.2, 0, 0.8) infinite, spinner-fade 1.2s linear infinite;
-  }
-  
-  .loader:before {
-    border-top-color: #66e6ff;
-  }
-  
-  .loader:after {
-    border-top-color: #f0db75;
-    animation-delay: 0.3s;
-  }
-  
-  @keyframes spinner-spin {
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  
-  @keyframes spinner-fade {
-    20% {
-      opacity: .1;
+    .loader {
+        position: relative;
+        box-sizing: border-box;
+        background-clip: padding-box;
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        border: 4px solid rgba(255, 255, 255, 0.1);
+        -webkit-mask: linear-gradient(rgba(0, 0, 0, 0.1), #000000 90%);
+        transform-origin: 50% 60%;
+        transform: perspective(200px) rotateX(45deg);
+        animation: spinner-wiggle 1.2s infinite;
     }
   
-    40% {
-      opacity: 1;
+    .loader:before,
+    .loader:after {
+        content: "";
+        position: absolute;
+        margin: -4px;
+        box-sizing: inherit;
+        width: inherit;
+        height: inherit;
+        border-radius: inherit;
+        opacity: .05;
+        border: inherit;
+        border-color: transparent;
+        animation: spinner-spin 1.2s cubic-bezier(0.6, 0.2, 0, 0.8) infinite, spinner-fade 1.2s linear infinite;
     }
   
-    60% {
-      opacity: .1;
+    .loader:before {
+        border-top-color: #66e6ff;
     }
-  }
+    
+    .loader:after {
+        border-top-color: #f0db75;
+        animation-delay: 0.3s;
+    }
+  
+    @keyframes spinner-spin {
+        100% {
+        transform: rotate(360deg);
+        }
+    }
+  
+    @keyframes spinner-fade {
+        20% {
+        opacity: .1;
+        }
+    
+        40% {
+        opacity: 1;
+        }
+    
+        60% {
+        opacity: .1;
+        }
+    }
     .img-parent {
         width: 15rem;
         height: 15rem;
         position: relative;
         z-index: 1;
+        position: relative;
         &>img{
             z-index: 2;
-        }
-        &::after, &::before{
-            content: '';
-            border: 2px solid white;
             position: absolute;
-            top: 50%;
-            left: 50%;
-            z-index: 0;
-            border-radius: 50%;
-        }
-        &::before{
-            transform: translate(-51%, -50%);
-            width: 102%;
-            height: 102%;
-            box-shadow: inset 0 0 4px yellow;
-        }
-        &::after{
-            transform: translate(-53%, -50%);
-            width: 104%;
-            height: 104%;
-            box-shadow: inset 0 0 4px red;
         }
     }
+    .img-animation {
+        --s: 5px;
+        position: absolute;
+        width: 103%;
+        display: grid;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        -webkit-mask: radial-gradient(50% 50%,#0000 calc(99% - 2*var(--s)),#000 calc(101% - 2*var(--s)));
+        animation: r 8s linear infinite;
+    }
+  
+    .img-animation:before {
+        content: "";
+        background: conic-gradient(from 25deg,#f8a201 25%,#fa2402 0 50%,#fdb3b0 0 75%,#02dde1 0);
+        -webkit-mask: repeating-conic-gradient(#0000 0 25deg,#000 23% 25%),
+        radial-gradient(var(--s) at var(--s) 50%,#000 97%,#0000) 
+            left/calc(100% - 2*var(--s)) 100% repeat-x,
+        radial-gradient(var(--s) at 50% var(--s),#000 97%,#0000) 
+            top /100% calc(100% - 2*var(--s)) repeat-y;
+    }
+  
+    @keyframes r {
+        to {
+         transform: rotate(1turn)
+        }
+    }
+  
     .text-shadow {
         text-shadow: 2px 2px black;
     }
