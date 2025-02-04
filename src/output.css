@@ -1433,14 +1433,6 @@ video {
   --tw-shadow: var(--tw-shadow-colored);
 }
 
-.transition {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
 nav > ul::before{
   content: '';
   height: 100%;
@@ -1784,6 +1776,16 @@ nav > ul::before{
 
   .\32xl\:\*\:mb-6 > * {
     margin-bottom: 1.5rem;
+  }
+
+  .\32xl\:before\:top-11::before {
+    content: var(--tw-content);
+    top: 2.75rem;
+  }
+
+  .\32xl\:after\:bottom-7::after {
+    content: var(--tw-content);
+    bottom: 1.75rem;
   }
 }
 

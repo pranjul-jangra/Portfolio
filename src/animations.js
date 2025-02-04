@@ -70,7 +70,7 @@ gsap.utils.toArray(".flowLeft").forEach(element => {
         scrollTrigger: {
             trigger: element,  // Each element triggers its own animation
             start: "top 99%",
-            end: "top 80%",
+            end: "top 81%",
             scrub: true,
         }
     });
