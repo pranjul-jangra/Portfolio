@@ -854,6 +854,12 @@ video {
 
 /* media queries */
 
+@media (max-width: 650px){
+  .projects-container{
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (min-width: 1536px){
   .loader{
     width: 300px;
