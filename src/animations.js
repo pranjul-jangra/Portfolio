@@ -67,6 +67,7 @@ gsap.utils.toArray(".flowLeft").forEach(element => {
         y: 10,
         scale: 0.7,
         opacity: 0.7,
+        rotateY: 20,
         scrollTrigger: {
             trigger: element,  // Each element triggers its own animation
             start: "top 99%",
