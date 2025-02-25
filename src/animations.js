@@ -135,7 +135,7 @@ if(window.innerWidth >= 768){
 }
 
 
-//skills (frontend)
+//SKILLS (FRONTEND)
 const frontendTl = gsap.timeline({
     scrollTrigger: {
         trigger: "#frontend",
@@ -152,7 +152,7 @@ frontendTl.from('#html', { y: 50, opacity: 0, duration: 0.4 })
     .from('#javaScript', { y: 50, opacity: 0, duration: 0.4 }, '-=0.2')
     .from('#reactjs', { y: 50, opacity: 0, duration: 0.4 }, '-=0.2')
 
-//skills (backend)
+//SKILLS (BACKEND)
 const backendTl = gsap.timeline({
     scrollTrigger: {
         trigger: "#backend",
@@ -166,7 +166,7 @@ backendTl.from('#nodejs', { y: 50, opacity: 0, duration: 0.4 })
     .from('#expressjs', { y: 50, opacity: 0, duration: 0.4 }, '-=0.2')
     .from('#mongodb', { y: 50, opacity: 0, duration: 0.4 }, '-=0.2')
 
-//skills (other stacks)
+//SKILLS (OTHER STACKS)
 const otherStacksTl = gsap.timeline({
     scrollTrigger: {
         trigger: "#otherStacks",
@@ -180,50 +180,27 @@ otherStacksTl.from('#git', { y: 50, opacity: 0, duration: 0.4 })
     .from('#github', { y: 50, opacity: 0, duration: 0.4 }, '-=0.2')
     .from('#gsap', { y: 50, opacity: 0, duration: 0.4 }, '-=0.2')
     .from('#vite', { y: 50, opacity: 0, duration: 0.4 }, '-=0.2')
+    .from('#react-three-fiber', { y: 50, opacity: 0, duration : 0.4 }, '-=0.2')
+    .from('#Motion', { y: 50, opacity: 0, duration : 0.4 }, '-=0.2')
   
-//projects
-const clockTl = gsap.timeline({
-    scrollTrigger: {
-        trigger: "#clock",
-        start: "top 80%",
-        end: "top 50%",
-        toggleActions: "play none none reverse",
-    }
-});
-clockTl.from('#clock', { y: 50, opacity: 0, duration: 0.4 });
 
-const calculatorTl = gsap.timeline({
-    scrollTrigger: {
-        trigger: "#calculator",
-        start: "top 80%",
-        end: "top 50%",
-        toggleActions: "play none none reverse",
-    }
-});
-calculatorTl.from('#calculator', { y: 50, opacity: 0, duration: 0.4 });
-
-const rockPaperScissor = gsap.timeline({
-    scrollTrigger: {
-        trigger: "#rock-paper-scissor",
-        start: "top 80%",
-        end: "top 50%",
-        toggleActions: "play none none reverse",
-    }
-});
-rockPaperScissor.from('#rock-paper-scissor', { y: 50, opacity: 0, duration: 0.4 });
-
-const ticTacToe = gsap.timeline({
-    scrollTrigger: {
-        trigger: "#tic-tac-toe",
-        start: "top 80%",
-        end: "top 50%",
-        toggleActions: "play none none reverse",
-    }
-});
-ticTacToe.from('#tic-tac-toe', { y: 50, opacity: 0, duration: 0.4 });
+//PROJECT ANIMATIONS
+gsap.utils.toArray('.project-items-animations').forEach((item)=>{
+    gsap.from(item, {
+        y: 50, 
+        opacity: 0, 
+        duration: 0.4,
+        scrollTrigger:{
+            trigger : item,
+            start : 'top 80%',
+            end: 'top 50%',
+            toggleActions: 'play none none reverse'
+        }
+    })
+})
 
 
-// Regular js code
+// REGULAR JAVASCRIPT CODE
 const navItems = document.querySelector('#nav-items');
 const homeSection = document.querySelector('#home');
 const aboutSection = document.querySelector('#about');

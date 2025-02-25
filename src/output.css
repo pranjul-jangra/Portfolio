@@ -580,6 +580,10 @@ video {
   animation: r 8s cubic-bezier(0.6, 0.2, 0, 0.8) infinite;
 }
 
+.rotate-along-y{
+  transform: rotateY(-20deg);
+}
+
 .img-animation:before {
   content: "";
   background: conic-gradient(from 25deg,#f8a201 25%,#fa2402 0 50%,#fdb3b0 0 75%,#02dde1 0);
@@ -784,11 +788,11 @@ video {
 }
 
 .projects-container{
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 550px);
   gap: 30px;
   &>div{
-    max-width: 550px;
+    height: 100%;
     padding: 8px;
     box-shadow: inset 0 0 4px black;
     border-radius: 15px;
@@ -819,9 +823,6 @@ video {
         padding: 5px 25px 5px 50px;
       }
     }
-  }
-  &>div:nth-child(even){
-    align-self: flex-end;
   }
 }
 
@@ -866,9 +867,9 @@ video {
   }
 
   .projects-container{
+    grid-template-columns: repeat(auto-fill, 40vw);
     gap: 50px;
     &>div{
-      max-width: 740px;
       padding: 15px;
       &>img{
         height: 350px;
@@ -884,10 +885,6 @@ video {
           padding: 7px 35px 7px 83px;
         }
       }
-    }
-    &>div:nth-child(even){
-      align-self: flex-start;
-      margin-left: 700px;
     }
   }
 
@@ -1088,6 +1085,10 @@ video {
 
 .min-h-14 {
   min-height: 3.5rem;
+}
+
+.min-h-28 {
+  min-height: 7rem;
 }
 
 .w-48 {
@@ -1292,6 +1293,11 @@ video {
   padding-bottom: 1rem;
 }
 
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .pl-7 {
   padding-left: 1.75rem;
 }
@@ -1454,6 +1460,10 @@ nav > ul::before{
 
 .\*\:mb-4 > * {
   margin-bottom: 1rem;
+}
+
+.\*\:mb-5 > * {
+  margin-bottom: 1.25rem;
 }
 
 .marker\:text-emerald-500 *::marker {
