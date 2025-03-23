@@ -580,10 +580,6 @@ video {
   animation: r 8s cubic-bezier(0.6, 0.2, 0, 0.8) infinite;
 }
 
-.rotate-along-y{
-  transform: rotateY(-20deg);
-}
-
 .img-animation:before {
   content: "";
   background: conic-gradient(from 25deg,#f8a201 25%,#fa2402 0 50%,#fdb3b0 0 75%,#02dde1 0);
@@ -794,8 +790,10 @@ video {
   &>div{
     height: 100%;
     padding: 8px;
-    box-shadow: inset 0 0 4px black;
     border-radius: 15px;
+    position: relative;
+    border: 1px solid grey;
+    box-shadow: inset 0 0 2px 0.3px grey;
     &>img{
       width: 100%;
       height: 250px;
@@ -806,15 +804,21 @@ video {
       border-radius: 10px 10px 0 0 ;
       margin-bottom: 8px;
     }
-    &>div{
+    &>p{
       margin-bottom: 7px;
     }
+    &>div{
+      margin-bottom: 60px;
+    }
     & > a{
+      position: absolute;
+      bottom: 10px;
+      left: 8px;
       padding: 5px 25px 5px 10px;
       border-top-right-radius: 20px;
       border-bottom-right-radius: 20px;
-      border-block: 1px solid black;
-      border-right: 1px solid black;
+      border-block: 1px solid grey;
+      border-right: 1px solid grey;
       display: inline-block;
       margin: 15px 0 8px 0;
       text-align: right;
@@ -848,10 +852,6 @@ video {
   box-shadow: inset 0 0 3px black;
 }
 
-.manual-rotate{
-  transform: rotateX(-10deg) ;
-}
-
 /* media queries */
 
 @media (max-width: 650px){
@@ -881,8 +881,11 @@ video {
         height: 350px;
         margin-bottom: 13px;
       }
-      &>div{
+      &>p{
         margin-bottom: 17px;
+      }
+      &>div{
+        margin-bottom: 110px;
       }
       & > a{
         padding: 7px 35px 7px 17px;
@@ -905,10 +908,11 @@ video {
 @media (prefers-color-scheme: dark) {
   .projects-container{
     &>div{
-      box-shadow: inset 0 0 4px white;
+      border: 1px solid grey;
+      box-shadow: inset 0 0 2px 0.3px grey;
       & > a{
-        border-block: 1px solid white;
-        border-right: 1px solid white;
+        border-block: 1px solid grey;
+        border-right: 1px solid grey;
       }
     }
   }
@@ -1003,12 +1007,20 @@ video {
   margin-bottom: 7rem;
 }
 
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
 .mb-36 {
   margin-bottom: 9rem;
 }
 
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem;
 }
 
 .mb-7 {
@@ -1123,10 +1135,6 @@ video {
 
 .w-screen {
   width: 100vw;
-}
-
-.flex-shrink-0 {
-  flex-shrink: 0;
 }
 
 .grow {
@@ -1300,6 +1308,11 @@ video {
   padding-bottom: 1rem;
 }
 
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
 .pl-7 {
   padding-left: 1.75rem;
 }
@@ -1370,6 +1383,10 @@ video {
   text-transform: capitalize;
 }
 
+.leading-6 {
+  line-height: 1.5rem;
+}
+
 .tracking-wider {
   letter-spacing: 0.05em;
 }
@@ -1389,9 +1406,9 @@ video {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
-.text-cyan-500 {
+.text-cyan-700 {
   --tw-text-opacity: 1;
-  color: rgb(6 182 212 / var(--tw-text-opacity));
+  color: rgb(14 116 144 / var(--tw-text-opacity));
 }
 
 .text-red-500 {
@@ -1409,9 +1426,17 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-yellow-700 {
+.text-yellow-600 {
   --tw-text-opacity: 1;
-  color: rgb(161 98 7 / var(--tw-text-opacity));
+  color: rgb(202 138 4 / var(--tw-text-opacity));
+}
+
+.underline {
+  text-decoration-line: underline;
+}
+
+.decoration-white {
+  text-decoration-color: #fff;
 }
 
 .shadow-md {
@@ -1441,6 +1466,16 @@ video {
   --tw-shadow: var(--tw-shadow-colored);
 }
 
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-100 {
+  transition-duration: 100ms;
+}
+
 nav > ul::before{
   content: '';
   height: 100%;
@@ -1458,6 +1493,10 @@ nav > ul::before{
   font-family: 'Kumar One';
 
   src: url('./assets/KumarOne-Regular.ttf');
+}
+
+.\*\:mb-3 > * {
+  margin-bottom: 0.75rem;
 }
 
 .\*\:mb-4 > * {
@@ -1556,6 +1595,15 @@ nav > ul::before{
   content: var(--tw-content);
   --tw-bg-opacity: 1;
   background-color: rgb(234 179 8 / var(--tw-bg-opacity));
+}
+
+.hover\:text-slate-400:hover {
+  --tw-text-opacity: 1;
+  color: rgb(148 163 184 / var(--tw-text-opacity));
+}
+
+.hover\:decoration-slate-400:hover {
+  text-decoration-color: #94a3b8;
 }
 
 @media not all and (min-width: 768px) {
@@ -1828,6 +1876,11 @@ nav > ul::before{
 
   .dark\:stroke-white {
     stroke: #fff;
+  }
+
+  .dark\:text-cyan-500 {
+    --tw-text-opacity: 1;
+    color: rgb(6 182 212 / var(--tw-text-opacity));
   }
 
   .dark\:text-white {

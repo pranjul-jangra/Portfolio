@@ -45,10 +45,6 @@ nav > ul::before{
         -webkit-mask: radial-gradient(50% 50%,#0000 calc(99% - 2*var(--s)),#000 calc(101% - 2*var(--s)));
         animation: r 8s cubic-bezier(0.6, 0.2, 0, 0.8) infinite;
     }
-
-    .rotate-along-y{
-        transform: rotateY(-20deg);
-    }
   
     .img-animation:before {
         content: "";
@@ -221,8 +217,10 @@ nav > ul::before{
         &>div{
             height: 100%;
             padding: 8px;
-            box-shadow: inset 0 0 4px black;
             border-radius: 15px;
+            position: relative;
+            border: 1px solid grey;
+            box-shadow: inset 0 0 2px 0.3px grey;
             &>img{
                 width: 100%;
                 height: 250px;
@@ -231,15 +229,21 @@ nav > ul::before{
                 border-radius: 10px 10px 0 0 ;
                 margin-bottom: 8px;
             }
-            &>div{
+            &>p{
                 margin-bottom: 7px;
             }
+            &>div{
+                margin-bottom: 60px;
+            }
             & > a{
+                position: absolute;
+                bottom: 10px;
+                left: 8px;
                 padding: 5px 25px 5px 10px;
                 border-top-right-radius: 20px;
                 border-bottom-right-radius: 20px;
-                border-block: 1px solid black;
-                border-right: 1px solid black;
+                border-block: 1px solid grey;
+                border-right: 1px solid grey;
                 display: inline-block;
                 margin: 15px 0 8px 0;
                 text-align: right;
@@ -269,9 +273,6 @@ nav > ul::before{
     .contactBox-shadow{
         box-shadow: inset 0 0 3px black;
     }
-    .manual-rotate{
-        transform: rotateX(-10deg) ;
-    } 
 
     /* media queries */
     @media (max-width: 650px){
@@ -298,8 +299,11 @@ nav > ul::before{
                 height: 350px;
                 margin-bottom: 13px;
             }
-            &>div{
+            &>p{
                 margin-bottom: 17px;
+            }
+            &>div{
+                margin-bottom: 110px;
             }
             & > a{
                 padding: 7px 35px 7px 17px;
@@ -320,10 +324,11 @@ nav > ul::before{
     @media (prefers-color-scheme: dark) {
         .projects-container{
             &>div{
-                box-shadow: inset 0 0 4px white;
+                border: 1px solid grey;
+                box-shadow: inset 0 0 2px 0.3px grey;
                 & > a{
-                    border-block: 1px solid white;
-                    border-right: 1px solid white;
+                    border-block: 1px solid grey;
+                    border-right: 1px solid grey;
                 }
             }
         }

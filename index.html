@@ -3,53 +3,74 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My-Portfolio</title>
+    <title>Pranjul Jangra - Frontend Developer Portfolio</title>
+    <meta name="description" content="Explore the portfolio of Pranjul Jangra, a skilled frontend developer passionate about creating responsive, user-centric websites using modern technologies like React.js." />
+    <meta name="keywords" content="Frontend Developer, React.js, Web Developer, JavaScript, UI/UX, MERN Stack, Portfolio" />
+    <meta name="author" content="Pranjul Jangra" />
+
+    <meta property="og:title" content="Pranjul Jangra - Frontend Developer Portfolio" />
+    <meta property="og:description" content="Explore the portfolio of Pranjul Jangra, a skilled frontend developer passionate about creating responsive, user-centric websites using modern technologies like React.js." />
+    <meta property="og:image" content="./src/assets/profilePhoto.webp" />
+    <meta property="og:url" content="https://portfolio-git-main-pranjul-jangras-projects.vercel.app/" />
+    <meta property="og:type" content="website" />
+
     <link rel="stylesheet" href="./src/output.css" />
     <link rel="icon" href="./src/assets/weblogo.png" type="image/png" />
     <script type="module" src="./src/animations.js" defer></script>
   </head>
   <body class="dark:bg-[#101010] dark:text-white text-black bg-gray-300 2xl:text-3xl bg-cover bg-center text-balance font-sans overflow-x-clip">
 
-    <!-- navbar -->
-    <nav class="flex items-center text-white px-7 2xl:px-10 h-12 2xl:h-20 dark:bg-zinc-950 bg-gray-700 capitalize z-40 fixed top-0 w-screen  shadow-sm dark:shadow-white shadow-black">
-      <div class="text-2xl 2xl:text-6xl tracking-wider font-Kumar mr-auto">pranjul</div>
+
+<!-- --------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------- NAVBAR ----------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+    <nav class="flex items-center text-white px-7 2xl:px-10 h-12 2xl:h-20 dark:bg-zinc-950 bg-gray-700 capitalize z-40 fixed top-0 w-screen  shadow-sm dark:shadow-white shadow-black" aria-label="Navbar">
+      <div class="text-2xl 2xl:text-6xl tracking-wider font-Kumar mr-auto" aria-label="Pranjul">pranjul</div>
       <ul id="nav-items" class="max-md:hidden flex gap-1 relative" style="--width:calc(100% / 4); --active:0;">
-        <li class="nav-items"><div data-link="home reference">home</div></li>
-        <li class="nav-items"><div data-link="about reference">about</div></li>
-        <li class="nav-items"><div data-link="skills reference">skills</div></li>
-        <li class="nav-items"><div data-link="projects reference">projects</div></li>
+        <li class="nav-items"><div data-link="home reference" aria-label="Switch to home page">home</div></li>
+        <li class="nav-items"><div data-link="about reference" aria-label="Switch to about page">about</div></li>
+        <li class="nav-items"><div data-link="skills reference" aria-label="Switch to skills page">skills</div></li>
+        <li class="nav-items"><div data-link="projects reference" aria-label="Switch to projects page">projects</div></li>
       </ul>
-      <svg class="navSvg fill-white size-8 2xl:size-12 ml-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="contactRef">
+      <svg class="navSvg fill-white size-8 2xl:size-12 ml-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="contactRef" aria-label="Contact options">
         <path d="M19 6.184V5a3.003 3.003 0 0 0-3-3H6a2.987 2.987 0 0 0-2.99 2.95c0 .017-.01.032-.01.05v14a3.003 3.003 0 0 0 3 3h12a3.003 3.003 0 0 0 3-3V9a2.995 2.995 0 0 0-2-2.816ZM6 4h10a1.001 1.001 0 0 1 1 1v1H6.122A1.003 1.003 0 1 1 6 4Zm13 15a1.001 1.001 0 0 1-1 1H6a1.001 1.001 0 0 1-1-1V7.83A3.001 3.001 0 0 0 6 8h12a1.001 1.001 0 0 1 1 1Z"></path>
         <path d="M14.381 13.805A2.97 2.97 0 0 0 15 12a3 3 0 0 0-6 0 2.97 2.97 0 0 0 .619 1.805A3.984 3.984 0 0 0 8 17v1a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-1a3.984 3.984 0 0 0-1.619-3.195ZM11 12a1 1 0 1 1 1 1 1.001 1.001 0 0 1-1-1Zm-1 5a2 2 0 0 1 4 0Z"></path>
       </svg>
     </nav>
     <div class="contactsList fixed dark:bg-[#101010] bg-gray-300 -top-80 2xl:-top-96 right-5 flex flex-col gap-4 2xl:gap-9 justify-center items-end capitalize h-72 2xl:h-[450px] w-48 2xl:w-80 contactBox-shadow rounded-lg z-30">
-      <a class="contact-options" style="--accent:green" href="tel:+919812471042">phone number</a>
-      <a class="contact-options" style="--accent:green" href="https://wa.me/9812471042" target="_blank">whatsapp</a>
-      <a class="contact-options" style="--accent:red" href="mailto:pranjuljan68@gmail.com">email</a>
-      <a class="contact-options" style="--accent:skyblue" href="https://www.linkedin.com/in/pranjul-jangra-107700332/" target="_blank">linkedIn</a>
-      <a class="contact-options" style="--accent:#5c6bc0" href="https://github.com/pranjul-jangra?tab=overview&from=2024-09-01&to=2024-09-30" target="_blank">github</a>
+      <a class="contact-options" style="--accent:green" href="tel:+919812471042" aria-label="Phone option">phone number</a>
+      <a class="contact-options" style="--accent:green" href="https://wa.me/9812471042" target="_blank" aria-label="Whatsapp option">whatsapp</a>
+      <a class="contact-options" style="--accent:red" href="mailto:pranjuljan68@gmail.com" aria-label="Email option">email</a>
+      <a class="contact-options" style="--accent:skyblue" href="https://www.linkedin.com/in/pranjul-jangra-107700332/" target="_blank" aria-label="LinkedIn profile">linkedIn</a>
+      <a class="contact-options" style="--accent:#5c6bc0" href="https://github.com/pranjul-jangra?tab=overview&from=2024-09-01&to=2024-09-30" target="_blank" aria-label="Github profile">github</a>
     </div>
 
-    <!-- home content -->
-    <section id="home" class="flex flex-col mt-12">
-      <div class="w-screen h-[78vh] max-md:h-fit">
+
+<!-- --------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- ------------------------------------------------------ LANDING PAGE ------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+    <main id="home" class="flex flex-col mt-12" aria-label="Home page">
+      <section class="w-screen h-[78vh] max-md:h-fit">
         <div class="flex max-md:flex-col justify-center items-center gap-8 px-auto w-screen h-full">
-          <div class="flex manual-rotate justify-center rotate-along-y items-center z-20 profileImg max-md:mt-16">
-            <div class="img-animation z-0 size-[245px] 2xl:size-[391px] max-md:size-[197px] rounded-full"></div>
-            <img class="w-60 2xl:w-96 flex-shrink-0 max-md:w-48 aspect-square z-10 rounded-full bg-center bg-cover border-2 border-black" src="./src/assets/profilePic.jpg" alt="Profile photo" >
+          <div class="flex justify-center items-center z-20 profileImg max-md:mt-16" aria-label="Profile photo">
+            <div class="img-animation z-0 flex-shrink-1 size-[245px] 2xl:size-[391px] max-md:size-[197px] rounded-full"></div>
+            <img class="w-60 2xl:w-96 flex-shrink-1 max-md:w-48 aspect-square z-10 rounded-full bg-center bg-cover border-2 border-black" src="./src/assets/profilePhoto.webp" alt="Profile photo" >
           </div>
-          <div class="w-[65vw] max-md:w-[92vw] max-sm:w-[96vw] text-balance max-md:mb-16">
-            <div class="profileName text-4xl 2xl:text-6xl mb-7 2xl:mb-14">Hi, I'm <P class="text-red-600 font-bold tracking-wider">Pranjul</P> A Frontend Developer</div>
-            <div class="profileIntro">I'm a frontend developer who loves building user-friendly, responsive, and visually appealing websites. I enjoy turning ideas into interactive experiences and focusing on clean, efficient code. I have experience with various web technologies and frameworks, and I'm always eager to learn and improve my skills. Right now, I'm diving deeper into React.js and plan to expand into backend development to become a full-stack MERN developer.</div>
-          </div>
+          <article class="w-[65vw] max-md:w-[92vw] max-sm:w-[96vw] text-balance max-md:mb-16">
+            <div class="profileName text-4xl 2xl:text-6xl mb-7 2xl:mb-14" aria-label="Profile intro">Hi, I'm <P class="text-red-600 font-bold tracking-wider">Pranjul</P> A Full-Stack Developer</div>
+            <p class="profileIntro mb-5" aria-label="Profile description">I love building user-friendly, responsive, and dynamic web applications that create meaningful experiences. While I’m still growing my expertise, I have hands-on experience with React.js, Node.js, Express.js, and MongoDB, and I enjoy bringing ideas to life through clean and efficient code.</p>
+            <p class="profileIntro leading-6">From frontend design to backend logic, I’m always learning, improving, and pushing myself to build better, smarter solutions.</p>
+          </article>
         </div>
-      </div>
+      </section>
 
       <!-- contact logos -->
-      <div class="flex w-screen h-[22vh] justify-center gap-14 2xl:gap-24 max-sm:gap-8">
-        <a class="homeContainer-logos translate-y-7 scale-0" data-social="Phone" id="phoneLogo" style="--accent-color:green" href="tel:+919812471042" >
+      <section class="flex w-screen h-[22vh] justify-center gap-14 2xl:gap-24 max-sm:gap-8" aria-label="Contact options">
+        <a class="homeContainer-logos translate-y-7 scale-0" data-social="Phone" id="phoneLogo" style="--accent-color:green" href="tel:+919812471042" aria-label="Phone option">
           <svg class="w-[78%]" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 202.592 202.592" >
             <g>
               <g>
@@ -58,126 +79,108 @@
             </g>
           </svg>
         </a>
-        <a class="homeContainer-logos translate-y-7 scale-0" data-social="Email" id="emailLogo" style="--accent-color:red" href="mailto:pranjuljan68@gmail.com" >
+        <a class="homeContainer-logos translate-y-7 scale-0" data-social="Email" id="emailLogo" style="--accent-color:red" href="mailto:pranjuljan68@gmail.com" aria-label="Email option">
           <svg viewBox="0 0 24 24" class="fill-black dark:fill-white" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 5.25L3 6V18L3.75 18.75H20.25L21 18V6L20.25 5.25H3.75ZM4.5 7.6955V17.25H19.5V7.69525L11.9999 14.5136L4.5 7.6955ZM18.3099 6.75H5.68986L11.9999 12.4864L18.3099 6.75Z"/>
           </svg>
         </a>
-        <a class="homeContainer-logos translate-y-7 scale-0" data-social="LinkedIn" id="linkedInLogo" style="--accent-color:skyblue" href="https://www.linkedin.com/in/pranjul-jangra-107700332/" target="_blank" >
+        <a class="homeContainer-logos translate-y-7 scale-0" data-social="LinkedIn" id="linkedInLogo" style="--accent-color:skyblue" href="https://www.linkedin.com/in/pranjul-jangra-107700332/" target="_blank" aria-label="LinkedIn profile">
           <svg class="w-[70%]" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
             <path class="fill-black dark:fill-white" d="M478.234 600.75V1920H.036V600.75h478.198Zm720.853-2.438v77.737c69.807-45.056 150.308-71.249 272.38-71.249 397.577 0 448.521 308.666 448.521 577.562v737.602h-480.6v-700.836c0-117.867-42.173-140.215-120.15-140.215-74.134 0-120.151 23.55-120.151 140.215v700.836h-480.6V598.312h480.6ZM239.099 0c131.925 0 239.099 107.294 239.099 239.099s-107.174 239.099-239.1 239.099C107.295 478.198 0 370.904 0 239.098 0 107.295 107.294 0 239.099 0Z" fill-rule="evenodd"/>
           </svg>
         </a>
-        <a class="homeContainer-logos translate-y-7 scale-0" data-social="GitHub" id="githubLogo" style="--accent-color: #5c6bc0" href="https://github.com/pranjul-jangra?tab=overview&from=2024-09-01&to=2024-09-30" target="_blank" >
+        <a class="homeContainer-logos translate-y-7 scale-0" data-social="GitHub" id="githubLogo" style="--accent-color: #5c6bc0" href="https://github.com/pranjul-jangra?tab=overview&from=2024-09-01&to=2024-09-30" target="_blank" aria-label="Github profile">
           <svg class="w-[97%]" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 16 16">
             <path class="fill-black dark:fill-white" d="M7.999 0C3.582 0 0 3.596 0 8.032a8.031 8.031 0 0 0 5.472 7.621c.4.074.546-.174.546-.387 0-.191-.007-.696-.011-1.366-2.225.485-2.695-1.077-2.695-1.077-.363-.928-.888-1.175-.888-1.175-.727-.498.054-.488.054-.488.803.057 1.225.828 1.225.828.714 1.227 1.873.873 2.329.667.072-.519.279-.873.508-1.074-1.776-.203-3.644-.892-3.644-3.969 0-.877.312-1.594.824-2.156-.083-.203-.357-1.02.078-2.125 0 0 .672-.216 2.2.823a7.633 7.633 0 0 1 2.003-.27 7.65 7.65 0 0 1 2.003.271c1.527-1.039 2.198-.823 2.198-.823.436 1.106.162 1.922.08 2.125.513.562.822 1.279.822 2.156 0 3.085-1.87 3.764-3.652 3.963.287.248.543.738.543 1.487 0 1.074-.01 1.94-.01 2.203 0 .215.144.465.55.386A8.032 8.032 0 0 0 16 8.032C16 3.596 12.418 0 7.999 0z"></path>
           </svg>    
         </a>
-      </div>
-    </section>
+      </section>
+    </main>
 
-    <!-- about me -->
-    <section id="about" class="w-screen overflow-x-clip px-16 max-md:px-10 max-sm:px-5 pt-20">
-      <div class="flowLeft capitalize text-red-600 tracking-wider z-10 font-extrabold text-5xl 2xl:text-6xl mb-10 2xl:mb-14"><span class="w-full dark:bg-[#101010] bg-gray-300 z-10 relative before:w-[160%] after:w-[190%] before:h-[2px] after:h-[2px] before:absolute after:absolute before:-left-4 after:-left-4 before:top-9 after:bottom-5 2xl:before:top-11 2xl:after:bottom-7 before:bg-yellow-500 after:bg-yellow-500 before:z-[-1] after:z-[-1]">about</span><span ></span></div>
-      <div class="mb-10 2xl:mb-14">
-        <div class="mb-9 2xl:mb-12 flowLeft"> Hello, I'm Pranjul—a frontend developer who believes in the power of animations, minimalism, creativity, and responsiveness. I specialize in crafting user-centric websites that not only meet client goals but also create smooth, engaging experiences for users. I enjoy bringing designs to life with clean code and thoughtful functionality, ensuring that every interaction feels intuitive. I'm always exploring new technologies to push the boundaries of web development and make the web more dynamic and accessible.</div>
-        <div class="pl-9 mb-9 2xl:mb-12 flowLeft capitalize text-4xl 2xl:text-5xl text-cyan-500 font-Kumar">future goal</div>
-        <div class="pl-9 flowLeft">I aim to strengthen my skills in creating smooth, interactive animations that enhance user experience. At the same time, I'm diving into backend development, exploring technologies like Node.js, Express.js, and MongoDB. My goal is to become a full-stack MERN developer so I can handle both frontend and backend, building complete and efficient web solutions. I love learning and pushing my limits to create seamless, high-performance applications that make a real impact.</div>
-      </div>
-      <div class="mb-9 2xl:mb-12">
-        <div class="text-4xl 2xl:text-5xl flowLeft text-cyan-500 font-Kumar mb-9 2xl:mb-12 capitalize">academic details</div>
+
+<!-- --------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- ----------------------------------------------------- ABOUT SECTION ------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+    <main id="about" class="w-screen overflow-x-clip px-16 max-md:px-10 max-sm:px-5 pt-20" aria-label="About page">
+      <h1 class="flowLeft capitalize text-red-600 tracking-wider z-10 font-extrabold text-5xl 2xl:text-6xl mb-10 2xl:mb-14" aria-label="About me"><span class="w-full dark:bg-[#101010] bg-gray-300 z-10 relative before:w-[160%] after:w-[190%] before:h-[2px] after:h-[2px] before:absolute after:absolute before:-left-4 after:-left-4 before:top-9 after:bottom-5 2xl:before:top-11 2xl:after:bottom-7 before:bg-yellow-500 after:bg-yellow-500 before:z-[-1] after:z-[-1]">Meet Pranjul</span></h1>
+      <section class="mb-10 2xl:mb-14" aria-labelledby="about-intro">
+        <article class="mb-9 2xl:mb-12 *:mb-3"> 
+          <p id="about-intro" class="flowLeft">Hello, I'm Pranjul—a full stack developer. </p>
+          <p class="flowLeft leading-6">I specialize in building responsive, user-friendly, and visually engaging websites that focus on delivering a great user experience. With a strong foundation in HTML, CSS, JavaScript, and React.js, I create dynamic and intuitive interfaces that feel smooth and natural to use.</p>
+          <p class="flowLeft leading-6">I specialize in creating smooth, interactive animations using GSAP and Framer Motion, enhancing user engagement and making websites more immersive. My goal is to build not just functional sites, but experiences that users truly enjoy.</p>
+          <p class="flowLeft leading-6">I've built a solid foundation in backend development with the MERN stack (MongoDB, Express.js, React.js, Node.js). I work on developing well-structured, secure, and scalable server-side solutions that efficiently manage data and interactions.</p>
+        </article>
+        <h3 class="pl-9 mb-9 2xl:mb-12 flowLeft capitalize text-4xl 2xl:text-5xl text-cyan-700 dark:text-cyan-500 font-Kumar" aria-label="Future goal">What’s Next</h3>
+        <article class="pl-9">
+          <p class="flowLeft leading-6 mb-3">As I continue to grow as a full-stack developer, my focus is on deepening my expertise in backend development while refining my frontend skills. On the backend, I'm working on optimizing database management, improving API performance, and building scalable architectures that handle data efficiently. I aim to gain a deeper understanding of authentication, security, and cloud-based deployments to create more robust applications.</p>
+          <p class="flowLeft leading-6 mb-3">On the frontend, I’m focused on enhancing user experience by optimizing performance, improving accessibility, and implementing advanced UI/UX design principles. I aim to refine interface responsiveness, streamline interactions, and ensure seamless navigation. Additionally, I plan to explore emerging frameworks and tools to build more interactive, dynamic, and visually engaging applications.</p>
+          <p class="flowLeft leading-6 mb-3">Ultimately, my goal is to become a highly proficient full-stack developer, capable of designing and managing complete web applications from start to end. I'm constantly learning, experimenting, and improving to push my skills further and build solutions that are both powerful and user-centric.</p>
+        </article>
+      </section>
+      <section class="mb-9 2xl:mb-12">
+        <h3 class="text-4xl 2xl:text-5xl flowLeft text-cyan-700 dark:text-cyan-500 font-Kumar mb-9 2xl:mb-12 capitalize" aria-label="Academic details">academic details</h3>
         <div class="border-l-2 dark:border-gray-200 border-black rounded-sm ml-2 pl-7">
-          <div class="mb-8 2xl:mb-12 flowLeft">
-            <div class="font-bold mb-2 2xl:mb-4">Backend development: By self</div>
-            <div class="text-sm 2xl:text-2xl">Dec,2024 - Now</div>
-          </div>
-          <div class="mb-8 2xl:mb-12 flowLeft">
-            <div class="font-bold mb-2 2xl:mb-4">Frontend development: By self</div>
-            <div class="text-sm 2xl:text-2xl">June,2024 - Nov,2024</div>
-          </div>
-          <div class="mb-8 2xl:mb-12 flowLeft">
-            <div class="font-bold mb-2 2xl:mb-4">Bsc(computer science): From Manohar mamorial college</div>
-            <div>Fatehabad, Haryana</div>
-            <div class="text-sm 2xl:text-2xl">2021-2024</div>
-            <div class="text-sm 2xl:text-2xl">grade: B</div>
-          </div>
-          <div class="mb-8 2xl:mb-12 flowLeft">
-            <div class="font-bold mb-2 2xl:mb-4">12<sup>th</sup>: From ST JOHN'S INTL SCHOOL</div>
-            <div>Bhodia Khera, Fatehabad, Haryana</div>
-            <div class="text-sm 2xl:text-2xl">2020-2021</div>
-            <div class="text-sm 2xl:text-2xl">Percentage: 77%</div>
-          </div>
-        </div>
-      </div>
-      <div >
-        <div class="flowLeft text-4xl 2xl:text-5xl text-cyan-500 font-Kumar mb-9 2xl:mb-12 capitalize">hobbies</div>
-        <div class="*:mb-4 2xl:*:mb-6">
-          <div class="flowLeft">1.   Exploring Tech & Learning – I stay updated with the latest tech trends by engaging with content on platforms like YouTube, constantly refining and expanding my skills.</div>
-          <div class="flowLeft">2.   Learning New Technologies - I enjoy exploring and learning new technologies to stay adaptable and grow as a developer.</div>
-          <div class="flowLeft">3.   Building Side Projects – I love experimenting with new ideas through personal projects, helping me improve my problem-solving and development skills.</div>
-          <div class="flowLeft">4.   Anime & Gaming for Relaxation – Watching anime and playing games help me unwind, stay creative, and maintain a balanced mindset.</div>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- Achivements -->
-    <section class="w-screen overflow-x-clip px-16 max-md:px-10 max-sm:px-5 pt-36">
-      <div class="flowLeft capitalize text-red-600 tracking-wider z-10 font-extrabold text-5xl 2xl:text-6xl mb-10 2xl:mb-14"><span class="w-full dark:bg-[#101010] bg-gray-300 z-10 relative before:w-[140%] after:w-[170%] before:h-[2px] after:h-[2px] before:absolute after:absolute before:-left-4 after:-left-4 before:top-9 after:bottom-5 2xl:before:top-11 2xl:after:bottom-7 before:bg-yellow-500 after:bg-yellow-500 before:z-[-1] after:z-[-1]">achievement</span><span ></span></div>
-
-      <!-- javaScript badge  -->
-      <section class="mb-36 2xl:mb-44">
-        <div class="w-full moveUp text-center text-4xl 2xl:text-5xl text-cyan-500 font-Kumar mb-11 2xl:mb-20 capitalize">Javascript Test</div>
-        <div id="jsTest" class="flex max-md:flex-col justify-around items-center max-md:gap-14 mb-11 2xl:mb-16">
-          <div class="flex animationBelow768 jsIntro flex-col py-4 px-2 2xl:py-7 2xl:px-4 shadow-md shadow-[#f5b300] rounded-lg ml-16 2xl:ml-0 max-md:ml-0">
-            <span class="font-bold">Pranjul</span>
-            <span>Candidate ID: 1123984</span>
-            <span>Date: 25 Nov, 2024</span>
-            <span>Qualified At First Attempt</span>
-            <span class="mb-4 2xl:mb-7">By Skillyst (Foundit)</span>
-            <a href="https://www.foundit.in/skillyst/view-report/1217945-56d696d630-pranjul-fullstack-sern-test" target="_blank" >View Report</a>
-          </div>
-          <div class="border-white animationBelow768 jsBadge flex flex-col items-center">
-            <img class="w-48 h-44 2xl:w-56 2xl:h-52 bg-cover bg-center" src="./src/assets//foundit-badges.png" alt="Gold Badge">
-            <div class="text-yellow-700">Earned A Gold Badge</div>
-          </div>
-          <div class="flex animationBelow768 jsProgress justify-center max-md:ml-11">
-            <div class="loader"></div>
-            <div class="text-3xl font-bold -translate-x-[9.5rem] translate-y-[6rem] 2xl:-translate-x-[13rem] 2xl:translate-y-[11rem] relative">
-              <span class="text-[#f5b300]">70%</span>
-              <span class="font-medium absolute top-[0.9rem] rotate-[30deg]">/</span>
-              <span class="text-base 2xl:text-xl absolute top-[1.8rem] left-[4.7rem]">100%</span>
-            </div>
-          </div>
-        </div>
-        <div class="w-full">
-          <div class="w-full moveUp text-center mb-7 2xl:mb-10 text-2xl 2xl:text-4xl">What Covered In It:</div>
-          <ul class="flex max-md:flex-col justify-center items-center gap-7 2xl:gap-14 w-full md:list-disc marker:text-emerald-500">
-            <li class="moveUp">Fundamentals</li>
-            <li class="moveUp">Async/Await</li>
-            <li class="moveUp">ES6+ Features</li>
-            <li class="moveUp">Promises</li>
-            <li class="moveUp">DOM Manipulation</li>
-            <li class="moveUp">Error Handling</li>
-          </ul>
+          <article class="mb-8 2xl:mb-12 flowLeft" aria-labelledby="ad-4">
+            <p id="ad-4" class="font-bold mb-2 2xl:mb-4">Backend Development - (Self-Taught)</p>
+            <p class="text-sm 2xl:text-2xl">Dec,2024 - Present</p>
+          </article>
+          <article class="mb-8 2xl:mb-12 flowLeft" aria-labelledby="ad-3">
+            <p id="ad-3" class="font-bold mb-2 2xl:mb-4">Frontend Development - (Self-Taught)</p>
+            <p class="text-sm 2xl:text-2xl">June,2024 - Nov,2024</p>
+          </article>
+          <article class="mb-8 2xl:mb-12 flowLeft" aria-labelledby="ad-2">
+            <p id="ad-2" class="font-bold mb-2 2xl:mb-4">Bachelor Of Science(Computer Science) - Manohar Memorial College</p>
+            <p class="text-sm 2xl:text-2xl">Fatehabad, Haryana</p>
+            <p class="text-sm 2xl:text-2xl">2021-2024</p>
+            <p class="text-sm 2xl:text-2xl">grade: B</p>
+          </article>
+          <article class="mb-8 2xl:mb-12 flowLeft" aria-labelledby="ad-1">
+            <p id="ad-1" class="font-bold mb-2 2xl:mb-4">12<sup>th</sup> Grade - ST JOHN'S International School</p>
+            <p class="text-sm 2xl:text-2xl">Bhodia Khera, Fatehabad, Haryana</p>
+            <p class="text-sm 2xl:text-2xl">2020-2021</p>
+            <p class="text-sm 2xl:text-2xl">Percentage: 77%</p>
+          </article>
         </div>
       </section>
+      <section >
+        <h3 class="flowLeft text-4xl 2xl:text-5xl text-cyan-700 dark:text-cyan-500 font-Kumar mb-9 2xl:mb-12 capitalize" aria-label="Hobbies">Hobbies & Interests</h3>
+        <article class="*:mb-4 2xl:*:mb-6">
+          <p class="flowLeft">1.   Exploring Tech & Learning 🖥️📚 – I stay updated with the latest tech trends by engaging with content on platforms like YouTube and Instagram, constantly refining and expanding my skills.</p>
+          <p class="flowLeft">2.   Learning New Technologies 🛠️🚀 - I enjoy exploring and learning new technologies to stay adaptable and grow as a developer.</p>
+          <p class="flowLeft">3.   Building Side Projects 🏗️🔧 –  I enjoy turning ideas into real applications, experimenting with features, and solving problems through personal projects. It’s a fun way to push my creativity and improve my development skills.</p>
+          <p class="flowLeft">4.   Anime & Gaming for Relaxation 🎮📺 – Watching anime and playing games help me unwind, stay creative, and maintain a balanced mindset.</p>
+          <p class="flowLeft">5.   Creating Smooth & Engaging Animations ✨🎨 – I enjoy bringing websites to life with GSAP and Framer Motion, making interactions feel smooth and engaging. From subtle hover effects to complex page transitions, I love using animations to enhance user experience and add a dynamic touch to my projects.</p>
+        </article>
+      </div>
+    </main>
+
+
+<!-- --------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- ----------------------------------------------------- ACHIVEMENTS --------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+    <main class="w-screen overflow-x-clip px-16 max-md:px-10 max-sm:px-5 pt-36" aria-label="achievements">
+      <h1 class="flowLeft capitalize text-red-600 tracking-wider z-10 font-extrabold text-5xl 2xl:text-6xl mb-10 2xl:mb-14" aria-label="Achievements"><span class="w-full dark:bg-[#101010] bg-gray-300 z-10 relative before:w-[140%] after:w-[170%] before:h-[2px] after:h-[2px] before:absolute after:absolute before:-left-4 after:-left-4 before:top-9 after:bottom-5 2xl:before:top-11 2xl:after:bottom-7 before:bg-yellow-500 after:bg-yellow-500 before:z-[-1] after:z-[-1]">achievements</span><span ></span></h1>
 
       <!-- HTML/CSS badge  -->
-      <section class="mb-20 2xl:mb-28">
-        <div class="w-full moveUp text-center text-4xl 2xl:text-5xl text-cyan-500 font-Kumar mb-11 2xl:mb-20 capitalize">HTML & CSS Test</div>
-        <div id="htmlcssTest" class="flex max-md:flex-col justify-around items-center max-md:gap-14 mb-11 2xl:mb-16">
+      <section class="mb-20 2xl:mb-28" aria-labelledby="html-css-test">
+        <h3 id="html-css-test" class="w-full moveUp text-center text-4xl 2xl:text-5xl text-cyan-700 dark:text-cyan-500 font-Kumar mb-11 2xl:mb-20 capitalize">HTML & CSS Test</h3>
+        <article id="htmlcssTest" class="flex max-md:flex-col justify-around items-center max-md:gap-14 mb-11 2xl:mb-16">
           <div class="flex animationBelow768 htmlcssIntro flex-col py-4 px-2 2xl:py-7 2xl:px-4 shadow-md shadow-[#94c72f] rounded-lg ml-16 2xl:ml-0 max-md:ml-0">
-            <span >Pranjul</span>
-            <span>Candidate ID: 1123984</span>
-            <span>Date: 25 Nov, 2024</span>
-            <span>Qualified At First Attempt</span>
-            <span class="mb-4 2xl:mb-7">By Skillyst (Foundit)</span>
-            <a href="https://www.foundit.in/skillyst/view-report/1217979-1533e693c5-pranjul-html-css-skill" target="_blank" >View Report</a>
+            <p class="mb-3 font-bold">Pranjul</p>
+            <p class="text-sm">Candidate ID: 1123984</p>
+            <p class="text-sm">Date: 25 Nov, 2024</p>
+            <p class="text-sm">Qualified At First Attempt</p>
+            <p class="text-sm">Total attempts: 1</p>
+            <p class="text-sm mb-4 2xl:mb-7">By Skillyst (Foundit)</p>
+            <a class="underline text-sm decoration-white hover:text-slate-400 hover:decoration-slate-400 transition-all duration-100" href="https://www.foundit.in/skillyst/view-report/1217979-1533e693c5-pranjul-html-css-skill" target="_blank" >View Report</a>
           </div>
           <div class="border-white animationBelow768 htmlcssBadge flex flex-col items-center">
-            <img class="w-48 h-44 2xl:w-56 2xl:h-52 bg-cover bg-center" src="./src/assets//foundit-badges.png" alt="Gold Badge">
-            <div class="text-yellow-700">Earned A Gold Badge</div>
+            <img class="w-48 h-44 2xl:w-56 2xl:h-52 bg-cover bg-center glow-badge" loading="lazy" src="./src/assets//foundit-badges.png" alt="Gold Badge">
+            <div class="text-yellow-600">Earned A Gold Badge</div>
           </div>
           <div class="flex animationBelow768 htmlcssProgress justify-center max-md:ml-11">
             <div class="loader"></div>
@@ -187,35 +190,203 @@
               <span class="text-base 2xl:text-xl absolute top-[1.8rem] left-[4.7rem]">100%</span>
             </div>
           </div>
-        </div>
-        <div class="w-full">
+        </article>
+        <article class="w-full" aria-label="What has been covered in html/css test">
           <div class="w-full moveUp text-center mb-7 2xl:mb-10 text-2xl 2xl:text-4xl">What Covered In It:</div>
           <ul class="flex max-md:flex-col justify-center items-center gap-7 2xl:gap-14 w-full md:list-disc marker:text-emerald-500">
-            <li class="moveUp ">Fundamentals Of Both</li>
-            <li class="moveUp ">CSS Selectors and Specificity</li>
-            <li class="moveUp ">Semantic HTML</li>
-            <li class="moveUp ">Flexbox/Grid Layout</li>
-            <li class="moveUp ">CSS Box Model</li>
+            <li class="moveUp" aria-label="Fundamentals Of Both">Fundamentals Of Both</li>
+            <li class="moveUp" aria-label="CSS Selectors and Specificity">CSS Selectors and Specificity</li>
+            <li class="moveUp" aria-label="Semantic HTML">Semantic HTML</li>
+            <li class="moveUp" aria-label="Flexbox/Grid Layout">Flexbox/Grid Layout</li>
+            <li class="moveUp" aria-label="CSS Box Model">CSS Box Model</li>
           </ul>
-        </div>
+        </article>
       </section>
-    </section>
+
+      <!-- javaScript badge  -->
+      <section class="mb-36 2xl:mb-44" aria-labelledby="js-test">
+        <h3 id="js-test" class="w-full moveUp text-center text-4xl 2xl:text-5xl text-cyan-700 dark:text-cyan-500 font-Kumar mb-11 2xl:mb-20 capitalize">Javascript Test</h3>
+        <article id="jsTest" class="flex max-md:flex-col justify-around items-center max-md:gap-14 mb-11 2xl:mb-16">
+          <div class="flex animationBelow768 jsIntro flex-col py-4 px-2 2xl:py-7 2xl:px-4 shadow-md shadow-[#f5b300] rounded-lg ml-16 2xl:ml-0 max-md:ml-0">
+            <p class="mb-3 font-bold">Pranjul</p>
+            <p class="text-sm">Candidate ID: 1123984</p>
+            <p class="text-sm">Date: 25 Nov, 2024</p>
+            <p class="text-sm">Qualified At First Attempt</p>
+            <p class="text-sm">Total attempts: 1</p>
+            <p class="text-sm mb-4 2xl:mb-7">By Skillyst (Foundit)</p>
+            <a class="underline text-sm decoration-white hover:text-slate-400 hover:decoration-slate-400 transition-all duration-100" href="https://www.foundit.in/skillyst/view-report/1217945-56d696d630-pranjul-fullstack-sern-test" target="_blank" >View Report</a>
+          </div>
+          <div class="border-white animationBelow768 jsBadge flex flex-col items-center">
+            <img class="w-48 h-44 2xl:w-56 2xl:h-52 bg-cover bg-center" loading="lazy" src="./src/assets//foundit-badges.png" alt="Gold Badge">
+            <div class="text-yellow-600">Earned A Gold Badge</div>
+          </div>
+          <div class="flex animationBelow768 jsProgress justify-center max-md:ml-11">
+            <div class="loader"></div>
+            <div class="text-3xl font-bold -translate-x-[9.5rem] translate-y-[6rem] 2xl:-translate-x-[13rem] 2xl:translate-y-[11rem] relative">
+              <span class="text-[#f5b300]">70%</span>
+              <span class="font-medium absolute top-[0.9rem] rotate-[30deg]">/</span>
+              <span class="text-base 2xl:text-xl absolute top-[1.8rem] left-[4.7rem]">100%</span>
+            </div>
+          </div>
+        </article>
+        <article class="w-full" aria-label="What has been covered in javascript test">
+          <div class="w-full moveUp text-center mb-7 2xl:mb-10 text-2xl 2xl:text-4xl">What Covered In It:</div>
+          <ul class="flex max-md:flex-col justify-center items-center gap-7 2xl:gap-14 w-full md:list-disc marker:text-emerald-500">
+            <li class="moveUp" aria-label="Fundamentals">Fundamentals</li>
+            <li class="moveUp" aria-label="Async/Await">Async/Await</li>
+            <li class="moveUp" aria-label="ES6+ Features">ES6+ Features</li>
+            <li class="moveUp" aria-label="Promises">Promises</li>
+            <li class="moveUp" aria-label="DOM Manipulation">DOM Manipulation</li>
+            <li class="moveUp" aria-label="Error Handling">Error Handling</li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- React.js badge  -->
+      <section class="mb-36 2xl:mb-44" aria-labelledby="react-test">
+        <h3 id="react-test" class="w-full moveUp text-center text-4xl 2xl:text-5xl text-cyan-700 dark:text-cyan-500 font-Kumar mb-11 2xl:mb-20 capitalize">React.js Test</h3>
+        <article id="reactTest" class="flex max-md:flex-col justify-around items-center max-md:gap-14 mb-11 2xl:mb-16">
+          <div class="flex animationBelow768 reactIntro flex-col py-4 px-2 2xl:py-7 2xl:px-4 shadow-md shadow-[#94c72f] rounded-lg ml-16 2xl:ml-0 max-md:ml-0">
+            <p class="mb-3 font-bold">Pranjul</p>
+            <p class="text-sm">Candidate ID: 1123984</p>
+            <p class="text-sm">Date: 02 Mar, 2025</p>
+            <p class="text-sm">Qualified At First Attempt</p>
+            <p class="text-sm">Total attempts: 1</p>
+            <p class="text-sm mb-4 2xl:mb-7">By Skillyst (Foundit)</p>
+            <a class="underline text-sm decoration-white hover:text-slate-400 hover:decoration-slate-400 transition-all duration-100" href="https://www.foundit.in/skillyst/view-report/1336516-639b954cd8-pranjul-frontend-reactjs-test" target="_blank" >View Report</a>
+          </div>
+          <div class="border-white animationBelow768 reactBadge flex flex-col items-center">
+            <img class="w-48 h-44 2xl:w-56 2xl:h-52 bg-cover bg-center" loading="lazy" src="./src/assets//foundit-badges.png" alt="Gold Badge">
+            <div class="text-yellow-600">Earned A Gold Badge</div>
+          </div>
+          <div class="flex animationBelow768 reactProgress justify-center max-md:ml-11">
+            <div class="loader"></div>
+            <div class="text-3xl font-bold -translate-x-[9.5rem] translate-y-[6rem] 2xl:-translate-x-[13rem] 2xl:translate-y-[11rem] relative">
+              <span class="text-[#94c72f]">81%</span>
+              <span class="font-medium absolute top-[0.9rem] rotate-[30deg]">/</span>
+              <span class="text-base 2xl:text-xl absolute top-[1.8rem] left-[4.7rem]">100%</span>
+            </div>
+          </div>
+        </article>
+        <article class="w-full" aria-label="What has been covered in react js test">
+          <div class="w-full moveUp text-center mb-7 2xl:mb-10 text-2xl 2xl:text-4xl">What Covered In It:</div>
+          <ul class="flex max-md:flex-col justify-center items-center gap-7 2xl:gap-14 w-full md:list-disc marker:text-emerald-500">
+            <li class="moveUp" aria-label="State Management">State Management</li>
+            <li class="moveUp" aria-label="Components">Components</li>
+            <li class="moveUp" aria-label="Routing">Routing</li>
+            <li class="moveUp" aria-label="Hooks">Hooks</li>
+            <li class="moveUp" aria-label="Lifecycle Methods">Lifecycle Methods</li>
+            <li class="moveUp" aria-label="React Basics">React Basics</li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- Node.js badge  -->
+      <section class="mb-36 2xl:mb-44" aria-labelledby="node-test">
+        <h3 id="node-test" class="w-full moveUp text-center text-4xl 2xl:text-5xl text-cyan-700 dark:text-cyan-500 font-Kumar mb-11 2xl:mb-20 capitalize">NodeJS Test</h3>
+        <article id="nodeTest" class="flex max-md:flex-col justify-around items-center max-md:gap-14 mb-11 2xl:mb-16">
+          <div class="flex animationBelow768 nodeIntro flex-col py-4 px-2 2xl:py-7 2xl:px-4 shadow-md shadow-[#94c72f] rounded-lg ml-16 2xl:ml-0 max-md:ml-0">
+            <p class="mb-3 font-bold">Pranjul</p>
+            <p class="text-sm">Candidate ID: 1123984</p>
+            <p class="text-sm">Date: 13 Mar, 2025</p>
+            <p class="text-sm">Qualified At First Attempt</p>
+            <p class="text-sm">Total attempts: 2</p>
+            <p class="text-sm mb-4 2xl:mb-7">By Skillyst (Foundit)</p>
+            <a class="underline text-sm decoration-white hover:text-slate-400 hover:decoration-slate-400 transition-all duration-100" href="https://www.foundit.in/skillyst/view-report/1347608-5d36e3a5f3-pranjul-backend-nodejs-test" target="_blank" >View Report</a>
+          </div>
+          <div class="border-white animationBelow768 nodeBadge flex flex-col items-center">
+            <img class="w-48 h-44 2xl:w-56 2xl:h-52 bg-cover bg-center" loading="lazy" src="./src/assets//foundit-badges.png" alt="Gold Badge">
+            <div class="text-yellow-600">Earned A Gold Badge</div>
+          </div>
+          <div class="flex animationBelow768 nodeProgress justify-center max-md:ml-11">
+            <div class="loader"></div>
+            <div class="text-3xl font-bold -translate-x-[9.5rem] translate-y-[6rem] 2xl:-translate-x-[13rem] 2xl:translate-y-[11rem] relative">
+              <span class="text-[#94c72f]">89%</span>
+              <span class="font-medium absolute top-[0.9rem] rotate-[30deg]">/</span>
+              <span class="text-base 2xl:text-xl absolute top-[1.8rem] left-[4.7rem]">100%</span>
+            </div>
+          </div>
+        </article>
+        <article class="w-full" aria-label="What has been covered in node js test">
+          <div class="w-full moveUp text-center mb-7 2xl:mb-10 text-2xl 2xl:text-4xl">What Covered In It:</div>
+          <ul class="flex max-md:flex-col justify-center items-center gap-7 2xl:gap-14 w-full md:list-disc marker:text-emerald-500">
+            <li class="moveUp" aria-label="Node js">Node.js</li>
+            <li class="moveUp" aria-label="Error Handling and Debugging">Error Handling and Debugging</li>
+            <li class="moveUp" aria-label="Asynchronous Programming">Asynchronous Programming</li>
+            <li class="moveUp" aria-label="Core Concepts">Core Concepts</li>
+            <li class="moveUp" aria-label="Express js">Express.js</li>
+            <li class="moveUp" aria-label="Database Integration">Database Integration</li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- MongoDB badge  -->
+      <section class="mb-20 2xl:mb-28" aria-labelledby="mongo-test">
+        <h3 id="mongo-test" class="w-full moveUp text-center text-4xl 2xl:text-5xl text-cyan-700 dark:text-cyan-500 font-Kumar mb-11 2xl:mb-20 capitalize">MongoDB Test</h3>
+        <article id="MongoDBTest" class="flex max-md:flex-col justify-around items-center max-md:gap-14 mb-11 2xl:mb-16">
+          <div class="flex animationBelow768 MongoDBIntro flex-col py-4 px-2 2xl:py-7 2xl:px-4 shadow-md shadow-[#94c72f] rounded-lg ml-16 2xl:ml-0 max-md:ml-0">
+            <p class="mb-3 font-bold">Pranjul</p>
+            <p class="text-sm">Candidate ID: 1123984</p>
+            <p class="text-sm">Date: 25 Feb, 2025</p>
+            <p class="text-sm">Qualified At First Attempt</p>
+            <p class="text-sm">Total attempts: 1</p>
+            <p class="text-sm mb-4 2xl:mb-7">By Skillyst (Foundit)</p>
+            <a class="underline text-sm decoration-white hover:text-slate-400 hover:decoration-slate-400 transition-all duration-100" href="https://www.foundit.in/skillyst/view-report/1332961-c5e45fe561-pranjul-mongo-db-test" target="_blank" >View Report</a>
+          </div>
+          <div class="border-white animationBelow768 MongoDBBadge flex flex-col items-center">
+            <img class="w-48 h-44 2xl:w-56 2xl:h-52 bg-cover bg-center" loading="lazy" src="./src/assets//foundit-badges.png" alt="Gold Badge">
+            <div class="text-yellow-600">Earned A Gold Badge</div>
+          </div>
+          <div class="flex animationBelow768 MongoDBProgress justify-center max-md:ml-11">
+            <div class="loader"></div>
+            <div class="text-3xl font-bold  -translate-x-[9.5rem] translate-y-[6rem] 2xl:-translate-x-[13rem] 2xl:translate-y-[11rem] relative">
+              <span class="text-[#94c72f]">74%</span>
+              <span class="font-medium absolute top-[0.9rem] rotate-[30deg]">/</span>
+              <span class="text-base 2xl:text-xl absolute top-[1.8rem] left-[4.7rem]">100%</span>
+            </div>
+          </div>
+        </article>
+        <article class="w-full" aria-label="What has been covered in mongodb test">
+          <div class="w-full moveUp text-center mb-7 2xl:mb-10 text-2xl 2xl:text-4xl">What Covered In It:</div>
+          <ul class="flex max-md:flex-col justify-center items-center gap-7 2xl:gap-14 w-full md:list-disc marker:text-emerald-500">
+            <li class="moveUp" aria-label="Replication and Sharding">Replication and Sharding</li>
+            <li class="moveUp" aria-label="Indexing">Indexing</li>
+            <li class="moveUp" aria-label="Aggregation Framework">Aggregation Framework</li>
+            <li class="moveUp" aria-label="Data Modeling">Data Modeling</li>
+            <li class="moveUp" aria-label="CRUD Operations">CRUD Operations</li>
+          </ul>
+        </article>
+      </section>
+    </main>
 
 
-    <!-- SKILLS SECTION -->
-    <section id="skills" class="w-screen overflow-x-clip px-16 max-md:px-10 max-sm:px-5 pt-20">
-      <div class="capitalize flowLeft text-red-600 tracking-wider z-10 font-extrabold text-5xl 2xl:text-6xl mb-10 2xl:mb-14"><span class="w-full dark:bg-[#101010] bg-gray-300 z-10 relative before:w-[160%] after:w-[190%] before:h-[2px] after:h-[2px] before:absolute after:absolute before:-left-4 after:-left-4 before:top-9 after:bottom-5 2xl:before:top-11 2xl:after:bottom-7 before:bg-yellow-500 after:bg-yellow-500 before:z-[-1] after:z-[-1]">skills</span><span ></span></div>
+<!-- --------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- ---------------------------------------------------- SKILLS SECTION ------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+    <main id="skills" class="w-screen overflow-x-clip px-16 max-md:px-10 max-sm:px-5 pt-20" aria-label="Skills page">
+      <h1 class="capitalize flowLeft text-red-600 tracking-wider z-10 font-extrabold text-5xl 2xl:text-6xl mb-10 2xl:mb-14" aria-label="Skills"><span class="w-full dark:bg-[#101010] bg-gray-300 z-10 relative before:w-[160%] after:w-[190%] before:h-[2px] after:h-[2px] before:absolute after:absolute before:-left-4 after:-left-4 before:top-9 after:bottom-5 2xl:before:top-11 2xl:after:bottom-7 before:bg-yellow-500 after:bg-yellow-500 before:z-[-1] after:z-[-1]">skills</span><span ></span></h1>
       <div class="mb-7 2xl:mb-11 *:mb-5">
-        <div class="flowLeft">Here’s a list of all the tech stacks I’ve learned on my journey to becoming a full-stack MERN developer, enabling me to handle both frontend and backend development.</div>
-        <div class="flowLeft">To enhance user experience, I’ve also explored various animation libraries and platforms that help create smooth, interactive, and complex animations while optimizing performance. I’ve chosen libraries that work seamlessly with both vanilla JavaScript and React.js, ensuring flexibility across different projects.</div>
+        <p class="flowLeft leading-6">Here’s a list of all the tech stacks I’ve learned on my journey to becoming a full-stack MERN developer, enabling me to handle both frontend and backend development.</p>
+        <ul>
+          <li class="mb-2 flowLeft">🔹 HTML, CSS, JavaScript – Strong foundation in structuring, styling, and adding interactivity to web applications.</li>
+          <li class="mb-2 flowLeft">🔹 React.js – Building dynamic and high-performance frontend applications with component-based architecture.</li>
+          <li class="mb-2 flowLeft">🔹 Tailwind CSS – Utilizing utility-first styling for rapid and responsive UI development.</li>
+          <li class="mb-2 flowLeft">🔹 Node.js & Express.js & MongoDB – Developing scalable and efficient server-side applications with flexible NoSQL database.</li>
+          <li class="mb-2 flowLeft">🔹 GSAP & Framer Motion – Creating smooth, interactive, and performance-optimized animations.</li>
+          <li class="mb-2 flowLeft">🔹 React Three Fiber (R3F) – Integrating 3D elements and enhancing visual appeal with WebGL.</li>
+          <li class="mb-2 flowLeft">🔹 Git & GitHub – Version control and collaboration for efficient project management.</li>
+          <li class="mb-2 flowLeft">🔹 Vite – Enhancing development speed with a fast and optimized build tool.</li>
+        </ul>
       </div>
       
       <!-- FRONTEND STACKS -->
-      <section>
-        <div class="text-4xl 2xl:text-5xl flowLeft text-cyan-500 font-Kumar mb-7 2xl:mb-11 capitalize">Frontend Stacks</div>
-        <div id="frontend" class="tech-stacks-container">
+      <section aria-label="Frontend stacks">
+        <h3 class="text-4xl 2xl:text-5xl flowLeft text-cyan-700 dark:text-cyan-500 font-Kumar mb-7 2xl:mb-11 capitalize">Frontend Stacks</h3>
+        <article id="frontend" class="tech-stacks-container">
           <!-- html -->
-          <div id="html">
+          <div id="html" aria-label="HTML">
             <div>
               <svg xmlns="http://www.w3.org/2000/svg" aria-label="HTML5" viewBox="0 0 512 512" id="html">
                 <path fill="#e34f26" d="M71 460L30 0h451l-41 460-185 52"></path>
@@ -227,7 +398,7 @@
             <div style="--logo-color: #e34f26;">HTML</div>
           </div>
           <!-- css -->
-          <div id="css">
+          <div id="css" aria-label="CSS">
             <div>
               <svg  xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 16 16" id="css">
                 <path fill="#2196F3" d="m1 0 1.275 14.4L8 16l5.723-1.599L15 0z"></path>
@@ -237,7 +408,7 @@
             <div style="--logo-color: #2196F3;">CSS</div>
           </div>
           <!-- sass -->
-          <div id="sass">
+          <div id="sass" aria-label="SASS">
             <div>
               <svg  xmlns="http://www.w3.org/2000/svg" aria-label="Sass" viewBox="0 0 512 512" id="sass">
                 <rect width="512" height="512" fill="#c69" rx="15%"></rect>
@@ -247,7 +418,7 @@
             <div style="--logo-color: #c69;">SASS</div>
           </div>
           <!-- tailwind -->
-          <div id="tailwind">
+          <div id="tailwind" aria-label="Tailwind CSS">
             <div>
               <svg preserveAspectRatio="xMidYMid" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 153.6">
                 <linearGradient id="a" x1="-2.778%" y1="32%" y2="67.556%"><stop offset="0" stop-color="#2298bd"/>
@@ -259,7 +430,7 @@
             <div style="--logo-color: #2298bd;">Tailwind CSS</div>
           </div>
           <!-- javascript -->
-          <div id="javaScript">
+          <div id="javaScript" aria-label="JavaScript">
             <div>
               <svg  xmlns="http://www.w3.org/2000/svg" aria-label="JavaScript" viewBox="0 0 512 512" id="javascript">
                 <rect width="512" height="512" fill="#f7df1e" rx="15%"></rect>
@@ -269,7 +440,7 @@
             <div style="--logo-color: #f7df1e;">JavaScript</div>
           </div>
           <!-- reactjs -->
-          <div id="reactjs">
+          <div id="reactjs" aria-label="React JS">
             <div>
               <svg  xmlns="http://www.w3.org/2000/svg" id="react" viewBox="0 0 3618.6 3618.6">
                 <path d="M0 0h3618.6v3618.6H0z" style="fill:#222"></path>
@@ -281,15 +452,15 @@
             </div>
             <div style="--logo-color: #00d8ff;">React js</div>
           </div>
-        </div>
+        </article>
       </section>
 
       <!-- BACKEND STACKS -->
-      <section>
-        <div class="text-4xl 2xl:text-5xl flowLeft text-cyan-500 font-Kumar mb-7 2xl:mb-11 capitalize">Backend Stacks</div>
-        <div id="backend" class="tech-stacks-container">
+      <section aria-label="Backend stacks">
+        <h3 class="text-4xl 2xl:text-5xl flowLeft text-cyan-700 dark:text-cyan-500 font-Kumar mb-7 2xl:mb-11 capitalize">Backend Stacks</h3>
+        <article id="backend" class="tech-stacks-container">
           <!-- node.js -->
-          <div id="nodejs">
+          <div id="nodejs" aria-label="Node JS">
             <div>
               <svg viewBox="0 0 256 289" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
                 <g>
@@ -300,7 +471,7 @@
             <div style="--logo-color: #0bbd0b;">Node js</div>
           </div>
           <!-- express.js -->
-          <div id="expressjs">
+          <div id="expressjs" aria-label="Express JS">
             <div>
               <svg viewBox="0 0 512 149" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
                 <g>
@@ -311,7 +482,7 @@
             <div style="--logo-color: #000dff;">Express js</div>
           </div>
           <!-- mongoDB -->
-          <div id="mongodb">
+          <div id="mongodb" aria-label="MongoDB">
             <div>
               <svg viewBox="0 0 512 135" version="1.1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid">
                 <g>
@@ -322,15 +493,15 @@
             </div>
             <div style="--logo-color: #0fc60f;">MongoDB</div>
           </div>
-        </div>
+        </article>
       </section>
 
       <!-- OTHER STACKS -->
-      <section>
-        <div class="text-4xl 2xl:text-5xl flowLeft text-cyan-500 font-Kumar mb-7 2xl:mb-11 capitalize">Other Stacks</div>
-        <div id="otherStacks" class="tech-stacks-container">
+      <section aria-label="Other stacks">
+        <h3 class="text-4xl 2xl:text-5xl flowLeft text-cyan-700 dark:text-cyan-500 font-Kumar mb-7 2xl:mb-11 capitalize">Other Stacks</h3>
+        <article id="otherStacks" class="tech-stacks-container">
           <!-- git -->
-          <div id="git">
+          <div id="git" aria-label="Git">
             <div>
               <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                 <path fill="#F34F29" d="M124.742 58.378l-55.117-55.114c-3.172-3.174-8.32-3.174-11.497 0l-11.443 11.446 14.518 14.518c3.375-1.139 7.243-.375 9.932 2.314 2.703 2.706 3.462 6.607 2.293 9.993l13.992 13.994c3.385-1.167 7.292-.413 9.994 2.295 3.78 3.777 3.78 9.9 0 13.679-3.78 3.78-9.901 3.78-13.683 0-2.842-2.844-3.545-7.019-2.105-10.521l-13.048-13.049-.002 34.341c.922.455 1.791 1.063 2.559 1.828 3.779 3.777 3.779 9.898 0 13.683-3.779 3.777-9.904 3.777-13.679 0-3.778-3.784-4.088-9.905-.311-13.683.934-.933 1.855-1.638 2.855-2.11v-34.659c-1-.472-1.92-1.172-2.856-2.111-2.861-2.86-3.396-7.06-1.928-10.576l-14.233-14.313-37.754 37.79c-3.175 3.177-3.155 8.325.02 11.5l55.126 55.114c3.173 3.174 8.325 3.174 11.503 0l54.86-54.858c3.175-3.176 3.178-8.327.004-11.501z"></path>
@@ -339,7 +510,7 @@
             <div style="--logo-color: #F34F29;">Git</div>
           </div>
           <!-- github -->
-          <div id="github">
+          <div id="github" aria-label="Github">
             <div>
               <svg viewBox="0 -3.1 2490.3 2493" xmlns="http://www.w3.org/2000/svg">
                 <ellipse cx="1245.2" cy="1243.4" fill="#fff" rx="1217.6" ry="1246.5"/>
@@ -349,7 +520,7 @@
             <div style="--logo-color: #5c6bc0;">Github</div>
           </div>
           <!-- gsap -->
-          <div id="gsap">
+          <div id="gsap" aria-label="GreenSock animation platform">
             <div>
               <svg viewBox="0 0 256 297" version="1.1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid">
                 <title>GreenSock</title>
@@ -372,7 +543,7 @@
             <div style="--logo-color: rgb(1, 172, 1);">GreenSock Animation Platform</div>
           </div>
           <!-- vite -->
-          <div id="vite">
+          <div id="vite" aria-label="Vite">
             <div>
               <svg viewBox="0 0 256 257" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
                 <defs>
@@ -395,7 +566,7 @@
             <div style="--logo-color: rgb(169, 57, 255);">Vite</div>
           </div>
           <!-- react three fiber -->
-          <div id="react-three-fiber">
+          <div id="react-three-fiber" aria-label="React-three-fiber">
             <div>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke-linecap="square" stroke-miterlimit="10" version="1.1" viewBox="0 0 226.77 226.77">
                 <g transform="translate(8.964 4.2527)" fill-rule="evenodd" stroke="white" stroke-linecap="butt" stroke-linejoin="round" stroke-width="4">
@@ -410,83 +581,97 @@
             </div>
             <div style="--logo-color: #000dff;">React-Three-Fiber</div>
           </div>
-          <!-- framer motion -->
-          <div id="Motion">
+          <!-- motion -->
+          <div id="Motion" aria-label="Motion">
             <div>
               <svg xmlns="http://www.w3.org/2000/svg" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 560 400">
                 <circle cx="264" cy="200" r="215" fill="yellow" stroke="black" stroke-width="2"/>
                 <path d="m 416.473 0 l -217.933 385.66 h -198.54 l 170.17 -301.138 c 26.379 -46.68 92.207 -84.522 147.033 -84.522 Z m 486.875 96.415 c 0 -53.249 44.444 -96.415 99.272 -96.415 c 54.82 0 99.27 43.166 99.27 96.415 c 0 53.248 -44.45 96.415 -99.27 96.415 c -54.828 0 -99.272 -43.167 -99.272 -96.415 Z m -449.649 -96.415 h 198.54 l -217.933 385.66 h -198.54 Z m 234.492 0 h 198.542 l -170.173 301.138 c -26.378 46.68 -92.207 84.522 -147.032 84.522 h -99.27 Z" fill="black" fill-rule="nonzero" transform="matrix(.326712 0 0 .326712 100 137)"/>
               </svg>                                                                             
             </div>
-            <div style="--logo-color: yellow;">Framer Motion</div>
+            <div style="--logo-color: yellow;">Motion</div>
           </div>
-        </div>
+        </article>
       </section>
 
-    </section>
+    </main>
 
 
-    <!-- projects -->
-    <section id="projects" class="w-screen overflow-x-clip px-16 max-md:px-10 max-sm:px-5 pt-20 mb-28">
-      <div class="capitalize flowLeft text-red-600 tracking-wider z-10 font-extrabold text-5xl 2xl:text-6xl mb-10 2xl:mb-14"><span class="w-full dark:bg-[#101010] bg-gray-300 z-10 relative before:w-[160%] after:w-[190%] before:h-[2px] after:h-[2px] before:absolute after:absolute before:-left-4 after:-left-4 before:top-9 after:bottom-5 2xl:before:top-11 2xl:after:bottom-7 before:bg-yellow-500 after:bg-yellow-500 before:z-[-1] after:z-[-1]">projects</span><span ></span></div>
-      <div class="mb-7 2xl:mb-14 *:mb-4">
-        <div class="flowLeft">Every project I’ve worked on has helped me grow as a developer. From creating responsive and user-friendly interfaces to adding smooth animations and backend features, these projects have allowed me to apply what I’ve learned in real-world scenarios. They’ve also improved my understanding of UI/UX design, problem-solving, and writing clean, efficient code.</div>
-        <div class="flowLeft">I enjoy experimenting with animations to make websites more interactive and engaging while keeping performance in mind. Through each project, I push myself to explore new technologies, refine my coding skills, and build digital experiences that are both functional and visually appealing. As a fresher, I see every project as an opportunity to learn, improve, and get closer to becoming a well-rounded developer.</div>
-      </div>
-      <div class="projects-container">
+<!-- --------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- ---------------------------------------------------- PROJECTS SECTION ----------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------------------------------------------------------------------- -->
 
+
+    <main id="projects" class="w-screen overflow-x-clip px-16 max-md:px-10 max-sm:px-5 pt-20 mb-28" aria-label="Project page">
+      <h1 class="capitalize flowLeft text-red-600 tracking-wider z-10 font-extrabold text-5xl 2xl:text-6xl mb-10 2xl:mb-14" aria-label="Projects"><span class="w-full dark:bg-[#101010] bg-gray-300 z-10 relative before:w-[160%] after:w-[190%] before:h-[2px] after:h-[2px] before:absolute after:absolute before:-left-4 after:-left-4 before:top-9 after:bottom-5 2xl:before:top-11 2xl:after:bottom-7 before:bg-yellow-500 after:bg-yellow-500 before:z-[-1] after:z-[-1]">projects</span><span ></span></h1>
+      <section class="mb-7 2xl:mb-14 *:mb-4">
+        <p class="flowLeft leading-6">Every project I’ve worked on has helped me grow as a developer. From creating responsive and user-friendly interfaces to adding smooth animations and backend features, these projects have allowed me to apply what I’ve learned in real-world scenarios. They’ve also improved my understanding of UI/UX design, problem-solving, and writing clean, efficient code.</p>
+        <p class="flowLeft leading-6">I enjoy experimenting with animations to make websites more interactive and engaging while keeping performance in mind. Through each project, I push myself to explore new technologies, refine my coding skills, and build digital experiences that are both functional and visually appealing.</p>
+        <p class="flowLeft leading-6">As a fresher, I see every project as an opportunity to learn, improve, and get closer to becoming a well-rounded developer.</p>
+      </section>
+      <section class="projects-container">
+
+        <!-- proplanner -->
+        <div class="project-items-animations" aria-label="task management website">
+          <img loading="lazy" src="./src/assets/proplanner.png" alt="proplanner">
+          <p>A full-stack task management web application designed for efficiency and ease of use. With seamless multi-device login support, you can access and manage your tasks from anywhere, anytime. The platform ensures top-notch security with robust user authentication, keeping your data private and accessible only to you.</p>
+          <div><span class="text-red-500">Tech Stack:</span>  React.js, React-router-dom, Node.js, Express.js, MongoDB, Vite, JWT, Nodemailer and bcrypt</div>
+          <a href="https://proplanner-mu.vercel.app" target="_blank">
+            <button class="button" aria-label="Visit proplanner"><span class="z-20">Go To Webpage &#8594;</span></button>
+          </a>
+        </div>
         <!-- fake-store -->
-        <div class="project-items-animations">
-          <img loading="lazy" src="./src/assets/fake-store.png" alt="clock">
-          <div>This e-commerce website is build uing the fake-store-API. This website has implemented with every essential features provided by fake-store-API like limiting data, sorting data, cart products and filtering data based on categories.</div>
+        <div class="project-items-animations" aria-label="Ecommerce website">
+          <img loading="lazy" src="./src/assets/fake-store.png" alt="fake-store">
+          <p>This e-commerce website is build uing the fake-store-API. This website has implemented with every essential features provided by fake-store-API like limiting data, sorting data, cart products and filtering data based on categories.</p>
           <div><span class="text-red-500">Tech Stack:</span>  React.js, Vite, React-router-dom, React-error-boundary</div>
           <a href="https://fake-store-kappa-seven.vercel.app/" target="_blank">
-            <button class="button"><span class="z-20">Go To Webpage &#8594;</span></button>
+            <button class="button" aria-label="Visit fake-store"><span class="z-20">Go To Webpage &#8594;</span></button>
           </a>
         </div>
         <!-- clock -->
-        <div class="project-items-animations">
+        <div class="project-items-animations" aria-label="Digital clock website">
           <img loading="lazy" src="./src/assets/clock-project.png" alt="clock">
-          <div>Stay on top of every moment with our digital clock and make the most of your time using our easy-to-use stopwatch. Embrace the value of each second and manage your time effectively—because every moment counts.</div>
+          <p>Stay on top of every moment with our digital clock and make the most of your time using our easy-to-use stopwatch. Embrace the value of each second and manage your time effectively—because every moment counts.</p>
           <div><span class="text-red-500">Tech Stack:</span>  HTML, CSS, JavaScript and Tailwind CSS</div>
           <a href="https://timewizard.vercel.app/" target="_blank">
-            <button class="button"><span class="z-20">Go To Webpage &#8594;</span></button>
+            <button class="button" aria-label="Visit timewizard"><span class="z-20">Go To Webpage &#8594;</span></button>
           </a>
         </div>
         <!-- Calculator -->
-        <div class="project-items-animations">
+        <div class="project-items-animations" aria-label="Arithmetic calculator website">
           <img loading="lazy" src="./src/assets/calculator.png" alt="Calculator">
-          <div>A simple arithmetic calculator but smart enough to automatically corrects your input to ensure a valid expression, so you always get the right result. Just type what’s on your mind without worrying about the format. It will fix it for you as you go.</div>
+          <p>A simple arithmetic calculator but smart enough to automatically corrects your input to ensure a valid expression, so you always get the right result. Just type what’s on your mind without worrying about the format. It will fix it for you as you go.</p>
           <div><span class="text-red-500">Tech Stack:</span>  HTML, CSS and JavaScript</div>
           <a href="https://pranjul-jangra.github.io/Calculator/" target="_blank">
-            <button class="button"><span class="z-20">Go To Webpage &#8594;</span></button>
+            <button class="button" aria-label="Visit calculator"><span class="z-20">Go To Webpage &#8594;</span></button>
           </a>
         </div>
         <!-- rock-paper-scissor -->
-        <div class="project-items-animations">
+        <div class="project-items-animations" aria-label="Rock paper scissor game">
           <img loading="lazy" src="./src/assets/rock-paper-scissor-project.png" alt="Rock-Paper-Scissor">
-          <div>Experience the classic game of Rock, Paper, Scissors, where you face off against the device. Choose your move and see how it stacks up against the device’s choice. Will you win, lose, or tie? It’s all about quick thinking and a bit of luck!</div>
+          <p>Experience the classic game of Rock, Paper, Scissors, where you face off against the device. Choose your move and see how it stacks up against the device’s choice. Will you win, lose, or tie? It’s all about quick thinking and a bit of luck!</p>
           <div><span class="text-red-500">Tech Stack:</span>  HTML, SASS, JavaScript and Local Storage</div>
           <a href="https://rock-paper-scissor-tau-seven.vercel.app/" target="_blank">
-            <button class="button"><span class="z-20">Go To Webpage &#8594;</span></button>
+            <button class="button" aria-label="Visit rock-paper-scissor"><span class="z-20">Go To Webpage &#8594;</span></button>
           </a>
         </div>
         <!-- TIC-TAC-TOE -->
-        <div class="project-items-animations">
+        <div class="project-items-animations" aria-label="Tic tac toe game">
           <img loading="lazy" src="./src/assets/tic-tac-toe-project.png" alt="TIC-TAC-TOE">
-          <div>Here's a classic Tic Tac Toe game you can enjoy with friends, family, or loved ones. Test your strategic skills and see who can be the first to line up three X's or O's. It’s the perfect way to spend quality time together and have some fun!</div>
+          <p>Here's a classic Tic Tac Toe game you can enjoy with friends, family, or loved ones. Test your strategic skills and see who can be the first to line up three X's or O's. It’s the perfect way to spend quality time together and have some fun!</p>
           <div><span class="text-red-500">Tech Stack:</span>  HTML, SASS and JavaScript</div>
           <a href="https://tic-tac-toe-sigma-livid.vercel.app/" target="_blank">
-            <button class="button"><span class="z-20">Go To Webpage &#8594;</span></button>
+            <button class="button" aria-label="Visit tic-tac-toe"><span class="z-20">Go To Webpage &#8594;</span></button>
           </a>
         </div>
 
-      </div>
-    </section>
+      </section>
+    </main>
 
 
-    <footer class="border-t-[0.1px] dark:border-white border-black">
-      <div class="flex justify-center items-center text-center min-h-28 2xl:h-28 w-full px-4">Thank you for taking the time to explore my work! I truly appreciate your visit and hope you found it interesting and inspiring. If you’d like to connect, collaborate, or just have a chat, feel free to reach out. Looking forward to creating something amazing together!</div>
+    <footer class="border-t-[0.1px] dark:border-white border-black" aria-labelledby="footer-greet">
+      <div id="footer-greet" class="flex justify-center items-center text-center min-h-28 2xl:h-28 w-full px-4 py-6">Thank you for taking the time to explore my work! I truly appreciate your visit and hope you found it interesting and inspiring. If you’d like to connect, collaborate, or just have a chat, feel free to reach out. Looking forward to creating something amazing together!</div>
     </footer>
 
   </body>

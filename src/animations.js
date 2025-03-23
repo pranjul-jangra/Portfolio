@@ -6,11 +6,11 @@ gsap.registerPlugin(ScrollTrigger);
 // HOME PAGE ANIMATIONS
 let homeTl = gsap.timeline();
 if(window.innerWidth >= 768){
-    homeTl.from('.profileImg', { x: () => window.innerWidth * 0.5 - 295, opacity: 0.7, duration: 0.7, delay: 0.9 })
+    homeTl.from('.profileImg', { x: () => (window.innerWidth / 2), translate: '-50% 0', opacity: 0.7, duration: 0.7, delay: 0.9 })
     .from('.profileName', { x: -200, opacity: 0, duration: 0.7, scale: 0.7 })
     .from('.profileIntro', { x: -300, opacity: 0, duration: 0.7, scale: 0.5 }, '-=0.7');
 }else{
-    homeTl.from('.profileImg', { y: () => window.innerWidth * 0.5 - 245, opacity: 0.7, duration: 0.7, delay: 0.9 })
+    homeTl.from('.profileImg', { y: () => (window.innerHeight / 2), translate: '0 -50%', opacity: 0.7, duration: 0.7, delay: 0.9 })
     .from('.profileName', { x: -200, opacity: 0, duration: 0.7, scale: 0.7 })
     .from('.profileIntro', { x: -300, opacity: 0, duration: 0.7, scale: 0.5 }, '-=0.7');
 }
@@ -118,6 +118,45 @@ if(window.innerWidth >= 768){
     htmlcssTl.from('.htmlcssIntro', { y: 80, opacity: 0, duration: 0.5 })
         .from('.htmlcssBadge', { y: 80, opacity: 0, duration: 0.5 }, '-=0.2')
         .from('.htmlcssProgress', { y: 80, opacity: 0, duration: 0.5 }, '-=0.2');
+
+    //achievements (MongoDB test)
+    const MongoDBTL = gsap.timeline({
+        scrollTrigger: {
+            trigger: "#MongoDBTest",
+            start: "top 80%",
+            end: "top 50%",
+            toggleActions: "play none none reverse",
+        }
+    });
+    MongoDBTL.from('.MongoDBIntro', { y: 80, opacity: 0, duration: 0.5 })
+        .from('.MongoDBBadge', { y: 80, opacity: 0, duration: 0.5 }, '-=0.2')
+        .from('.MongoDBProgress', { y: 80, opacity: 0, duration: 0.5 }, '-=0.2');
+    
+    //achievements (React.js test)
+    const ReactTl = gsap.timeline({
+        scrollTrigger: {
+            trigger: "#reactTest",
+            start: "top 80%",
+            end: "top 50%",
+            toggleActions: "play none none reverse",
+        }
+    });
+    ReactTl.from('.reactIntro', { y: 80, opacity: 0, duration: 0.5 })
+        .from('.reactBadge', { y: 80, opacity: 0, duration: 0.5 }, '-=0.2')
+        .from('.reactProgress', { y: 80, opacity: 0, duration: 0.5 }, '-=0.2');
+    
+    //achievements (Node.js test)
+    const nodeTl = gsap.timeline({
+        scrollTrigger: {
+            trigger: "#nodeTest",
+            start: "top 80%",
+            end: "top 50%",
+            toggleActions: "play none none reverse",
+        }
+    });
+    nodeTl.from('.nodeIntro', { y: 80, opacity: 0, duration: 0.5 })
+        .from('.nodeBadge', { y: 80, opacity: 0, duration: 0.5 }, '-=0.2')
+        .from('.nodeProgress', { y: 80, opacity: 0, duration: 0.5 }, '-=0.2');
 
 }else{
     gsap.utils.toArray('.animationBelow768').forEach(element =>{
