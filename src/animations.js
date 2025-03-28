@@ -26,10 +26,7 @@ const contactsList = document.querySelector('.contactsList');
 let isHovered = false;
 let swipeAnimation = null;
 
-//when we hovered over the svg while the contactList is already visible then,
-//  1. A new swipeAnimation is created and
-//  2. Previous swipeAnimation is already exists which results in creation of multiple animations
-//So we need to guard the animation to prevent multiple creation of animation.
+
 navSvg.addEventListener('mouseenter', () => {
     isHovered = true;
 
@@ -57,22 +54,18 @@ function checkIsHovered() {
 
 
 // SCROLL TRIGGER ANIMATIONS:
-
-//It will creates an array of elements having class ".flowLeft"
-//.forEach is used to apply the scrollTrigger animations to each element
-//So that, they all will trigger independantly from each other.
 gsap.utils.toArray(".flowLeft").forEach(element => {
     gsap.from(element, {
         x: 200,
         y: 10,
         scale: 0.7,
-        opacity: 0.7,
+        opacity: 0,
         rotateY: 20,
         scrollTrigger: {
-            trigger: element,  // Each element triggers its own animation
-            start: "top 99%",
+            trigger: element,
+            start: "top 90%",
             end: "top 81%",
-            scrub: true,
+            toggleActions: "play none none reverse"
         }
     });
 });
@@ -84,9 +77,9 @@ gsap.utils.toArray(".moveUp").forEach(element => {
         scale: 0.6,
         scrollTrigger: {
             trigger: element,
-            start: "top 99%",
+            start: "top 90%",
             end: "top 81%",
-            scrub: true,
+            toggleActions: "play none none reverse"
         }
     });
 });
