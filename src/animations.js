@@ -54,35 +54,35 @@ function checkIsHovered() {
 
 
 // SCROLL TRIGGER ANIMATIONS:
-gsap.utils.toArray(".flowLeft").forEach(element => {
-    gsap.from(element, {
-        x: 200,
-        y: 10,
-        scale: 0.7,
-        opacity: 0,
-        rotateY: 20,
-        scrollTrigger: {
-            trigger: element,
-            start: "top 90%",
-            end: "top 81%",
-            toggleActions: "play none none reverse"
-        }
-    });
-});
+// gsap.utils.toArray(".flowLeft").forEach(element => {
+//     gsap.from(element, {
+//         x: 200,
+//         y: 10,
+//         scale: 0.7,
+//         opacity: 0,
+//         rotateY: 20,
+//         scrollTrigger: {
+//             trigger: element,
+//             start: "top 90%",
+//             end: "top 81%",
+//             toggleActions: "play none none reverse"
+//         }
+//     });
+// });
 
-gsap.utils.toArray(".moveUp").forEach(element => {
-    gsap.from(element, {
-        y: 50,
-        opacity: 0,
-        scale: 0.6,
-        scrollTrigger: {
-            trigger: element,
-            start: "top 90%",
-            end: "top 81%",
-            toggleActions: "play none none reverse"
-        }
-    });
-});
+// gsap.utils.toArray(".moveUp").forEach(element => {
+//     gsap.from(element, {
+//         y: 50,
+//         opacity: 0,
+//         scale: 0.6,
+//         scrollTrigger: {
+//             trigger: element,
+//             start: "top 90%",
+//             end: "top 81%",
+//             toggleActions: "play none none reverse"
+//         }
+//     });
+// });
 
 // TIMELINE WITH SCROLL TRIGGER
 if(window.innerWidth >= 768){
