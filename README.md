@@ -22,8 +22,8 @@ Built using modern technologies to ensure a **fast, responsive, and visually eng
 ## 📬 **Get in Touch**  
 I’d love to hear from you! Feel free to connect with me for collaborations, opportunities, or just a friendly chat.  
 
-📧 **Email:** [pranjuljan68@gmail.com]  
-💼 **LinkedIn:** [[Your LinkedIn Profile](https://www.linkedin.com/in/pranjul-jangra-107700332/)]  
+📧 <a href="mailto:pranjuljan68@gmail.com">Email</a>  
+💼 <a href="https://www.linkedin.com/in/pranjul-jangra-107700332/">LinkedIn</a>
 
 ---  
 💡 *Thanks for visiting! Hope you enjoy exploring my work.* 🚀 
