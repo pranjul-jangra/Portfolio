@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./src/output.css" />
     <link rel="icon" href="./src/assets/weblogo.png" type="image/png" />
     <script type="module" src="./src/animations.js" defer></script>
+    <script type="module" src="./utils/insertHtml.js" defer></script>
   </head>
   <body class="dark:bg-[#101010] dark:text-white text-black bg-gray-300 2xl:text-3xl bg-cover bg-center text-balance font-sans overflow-x-clip">
 
@@ -107,16 +108,15 @@
       <h1 class="flowLeft capitalize text-red-600 tracking-wider z-10 font-extrabold text-5xl 2xl:text-6xl mb-10 2xl:mb-14" aria-label="About me"><span class="w-full dark:bg-[#101010] bg-gray-300 z-10 relative before:w-[160%] after:w-[190%] before:h-[2px] after:h-[2px] before:absolute after:absolute before:-left-4 after:-left-4 before:top-9 after:bottom-5 2xl:before:top-11 2xl:after:bottom-7 before:bg-yellow-500 after:bg-yellow-500 before:z-[-1] after:z-[-1]">Meet Pranjul</span></h1>
       <section class="mb-10 2xl:mb-14" aria-labelledby="about-intro">
         <article class="mb-9 2xl:mb-12 *:mb-3"> 
-          <p id="about-intro" class="flowLeft">Hello, I'm Pranjul—a full stack developer. </p>
-          <p class="flowLeft leading-6">I specialize in building responsive, user-friendly, and visually engaging websites that focus on delivering a great user experience. With a strong foundation in HTML, CSS, JavaScript, and React.js, I create dynamic and intuitive interfaces that feel smooth and natural to use.</p>
-          <p class="flowLeft leading-6">I specialize in creating smooth, interactive animations using GSAP and Framer Motion, enhancing user engagement and making websites more immersive. My goal is to build not just functional sites, but experiences that users truly enjoy.</p>
+          <p id="about-intro" class="flowLeft">A full stack developer.</p>
+          <p class="flowLeft leading-6">I specialize in building responsive, user-friendly, and visually engaging websites that focus on delivering a great user experience.</p>
           <p class="flowLeft leading-6">I've built a solid foundation in backend development with the MERN stack (MongoDB, Express.js, React.js, Node.js). I work on developing well-structured, secure, and scalable server-side solutions that efficiently manage data and interactions.</p>
         </article>
         <h3 class="pl-9 mb-9 2xl:mb-12 flowLeft capitalize text-4xl 2xl:text-5xl text-cyan-700 dark:text-cyan-500 font-Kumar" aria-label="Future goal">What’s Next</h3>
         <article class="pl-9">
-          <p class="flowLeft leading-6 mb-3">As I continue to grow as a full-stack developer, my focus is on deepening my expertise in backend development while refining my frontend skills. On the backend, I'm working on optimizing database management, improving API performance, and building scalable architectures that handle data efficiently. I aim to gain a deeper understanding of authentication, security, and cloud-based deployments to create more robust applications.</p>
-          <p class="flowLeft leading-6 mb-3">On the frontend, I’m focused on enhancing user experience by optimizing performance, improving accessibility, and implementing advanced UI/UX design principles. I aim to refine interface responsiveness, streamline interactions, and ensure seamless navigation. Additionally, I plan to explore emerging frameworks and tools to build more interactive, dynamic, and visually engaging applications.</p>
-          <p class="flowLeft leading-6 mb-3">Ultimately, my goal is to become a highly proficient full-stack developer, capable of designing and managing complete web applications from start to end. I'm constantly learning, experimenting, and improving to push my skills further and build solutions that are both powerful and user-centric.</p>
+          <p class="flowLeft leading-6 mb-3">As I continue to grow as a full-stack developer, my focus is on deepening my expertise in backend development while refining my frontend skills.</p>
+          <p class="flowLeft leading-6 mb-3">On the frontend, I’m focused on enhancing user experience by optimizing performance, improving accessibility, and implementing UI/UX design principles.</p>
+          <p class="flowLeft leading-6 mb-3">Ultimately, my goal is to become a proficient full-stack developer, capable of designing and managing complete web applications from start to end.</p>
         </article>
       </section>
       <section class="mb-9 2xl:mb-12">
@@ -144,16 +144,6 @@
           </article>
         </div>
       </section>
-      <!-- <section >
-        <h3 class="flowLeft text-4xl 2xl:text-5xl text-cyan-700 dark:text-cyan-500 font-Kumar mb-9 2xl:mb-12 capitalize" aria-label="Hobbies">Hobbies & Interests</h3>
-        <article class="*:mb-4 2xl:*:mb-6">
-          <p class="flowLeft">1.   Exploring Tech & Learning 🖥️📚 – I stay updated with the latest tech trends by engaging with content on platforms like YouTube and Instagram, constantly refining and expanding my skills.</p>
-          <p class="flowLeft">2.   Learning New Technologies 🛠️🚀 - I enjoy exploring and learning new technologies to stay adaptable and grow as a developer.</p>
-          <p class="flowLeft">3.   Building Side Projects 🏗️🔧 –  I enjoy turning ideas into real applications, experimenting with features, and solving problems through personal projects. It’s a fun way to push my creativity and improve my development skills.</p>
-          <p class="flowLeft">4.   Anime & Gaming for Relaxation 🎮📺 – Watching anime and playing games help me unwind, stay creative, and maintain a balanced mindset.</p>
-          <p class="flowLeft">5.   Creating Smooth & Engaging Animations ✨🎨 – I enjoy bringing websites to life with GSAP and Framer Motion, making interactions feel smooth and engaging. From subtle hover effects to complex page transitions, I love using animations to enhance user experience and add a dynamic touch to my projects.</p>
-        </article>
-      </section> -->
     </main>
 
 
@@ -164,44 +154,6 @@
 
     <main class="w-screen overflow-x-clip px-16 max-md:px-10 max-sm:px-5 pt-36" aria-label="achievements">
       <h1 class="flowLeft capitalize text-red-600 tracking-wider z-10 font-extrabold text-5xl 2xl:text-6xl mb-10 2xl:mb-14" aria-label="Achievements"><span class="w-full dark:bg-[#101010] bg-gray-300 z-10 relative before:w-[140%] after:w-[170%] before:h-[2px] after:h-[2px] before:absolute after:absolute before:-left-4 after:-left-4 before:top-9 after:bottom-5 2xl:before:top-11 2xl:after:bottom-7 before:bg-yellow-500 after:bg-yellow-500 before:z-[-1] after:z-[-1]">achievements</span><span ></span></h1>
-
-      <!-- HTML/CSS badge  -->
-      <section class="mb-20 2xl:mb-28" aria-labelledby="html-css-test">
-        <h3 id="html-css-test" class="w-full moveUp text-center text-4xl 2xl:text-5xl text-cyan-700 dark:text-cyan-500 font-Kumar mb-11 2xl:mb-20 capitalize">HTML & CSS Test</h3>
-        <article id="htmlcssTest" class="flex max-md:flex-col justify-around items-center max-md:gap-14 mb-11 2xl:mb-16">
-          <div class="flex animationBelow768 htmlcssIntro flex-col py-4 px-2 2xl:py-7 2xl:px-4 shadow-md shadow-[#94c72f] rounded-lg ml-16 2xl:ml-0 max-md:ml-0">
-            <p class="mb-3 font-bold">Pranjul</p>
-            <p class="text-sm">Candidate ID: 1123984</p>
-            <p class="text-sm">Date: 25 Nov, 2024</p>
-            <p class="text-sm">Qualified At First Attempt</p>
-            <p class="text-sm">Total attempts: 1</p>
-            <p class="text-sm mb-4 2xl:mb-7">By Skillyst (Foundit)</p>
-            <a class="underline text-sm decoration-white hover:text-slate-400 hover:decoration-slate-400 transition-all duration-100" href="https://www.foundit.in/skillyst/view-report/1217979-1533e693c5-pranjul-html-css-skill" target="_blank" >View Report</a>
-          </div>
-          <div class="border-white animationBelow768 htmlcssBadge flex flex-col items-center">
-            <img class="w-48 h-44 2xl:w-56 2xl:h-52 bg-cover bg-center glow-badge" loading="lazy" src="./src/assets//foundit-badges.png" alt="Gold Badge">
-            <div class="text-yellow-600">Earned A Gold Badge</div>
-          </div>
-          <div class="flex animationBelow768 htmlcssProgress justify-center max-md:ml-11">
-            <div class="loader"></div>
-            <div class="text-3xl font-bold  -translate-x-[9.5rem] translate-y-[6rem] 2xl:-translate-x-[13rem] 2xl:translate-y-[11rem] relative">
-              <span class="text-[#94c72f]">81%</span>
-              <span class="font-medium absolute top-[0.9rem] rotate-[30deg]">/</span>
-              <span class="text-base 2xl:text-xl absolute top-[1.8rem] left-[4.7rem]">100%</span>
-            </div>
-          </div>
-        </article>
-        <article class="w-full" aria-label="What has been covered in html/css test">
-          <div class="w-full moveUp text-center mb-7 2xl:mb-10 text-2xl 2xl:text-4xl">What Covered In It:</div>
-          <ul class="flex max-md:flex-col justify-center items-center gap-7 2xl:gap-14 w-full md:list-disc marker:text-emerald-500">
-            <li class="moveUp" aria-label="Fundamentals Of Both">Fundamentals Of Both</li>
-            <li class="moveUp" aria-label="CSS Selectors and Specificity">CSS Selectors and Specificity</li>
-            <li class="moveUp" aria-label="Semantic HTML">Semantic HTML</li>
-            <li class="moveUp" aria-label="Flexbox/Grid Layout">Flexbox/Grid Layout</li>
-            <li class="moveUp" aria-label="CSS Box Model">CSS Box Model</li>
-          </ul>
-        </article>
-      </section>
 
       <!-- javaScript badge  -->
       <section class="mb-36 2xl:mb-44" aria-labelledby="js-test">
@@ -368,9 +320,8 @@
     <main id="skills" class="w-screen overflow-x-clip px-16 max-md:px-10 max-sm:px-5 pt-20" aria-label="Skills page">
       <h1 class="capitalize flowLeft text-red-600 tracking-wider z-10 font-extrabold text-5xl 2xl:text-6xl mb-10 2xl:mb-14" aria-label="Skills"><span class="w-full dark:bg-[#101010] bg-gray-300 z-10 relative before:w-[160%] after:w-[190%] before:h-[2px] after:h-[2px] before:absolute after:absolute before:-left-4 after:-left-4 before:top-9 after:bottom-5 2xl:before:top-11 2xl:after:bottom-7 before:bg-yellow-500 after:bg-yellow-500 before:z-[-1] after:z-[-1]">skills</span><span ></span></h1>
       <div class="mb-7 2xl:mb-11 *:mb-5">
-        <p class="leading-6">On my journey to becoming a full-stack MERN developer, I've built a strong foundation in HTML, CSS, and JavaScript, allowing me to create well-structured and interactive web applications. I specialize in React.js for building dynamic UIs and use Tailwind CSS to streamline styling for a modern and responsive design. To enhance user engagement, I incorporate GSAP and Framer Motion for smooth animations and even work with React Three Fiber (R3F) to integrate 3D elements.</p>
-        <p class="leading-6">I also manage my projects efficiently with Git & GitHub for version control and collaboration. Additionally, I use Vite for a faster development experience, making my workflow more optimized and productive.</p>
-        <p class="leading-6">For the backend, I develop scalable and efficient applications using Node.js, Express.js, and MongoDB, ensuring seamless communication between the client and server.</p>
+        <p class="leading-6 flowLeft">On my journey to becoming a full-stack MERN developer, I've built a strong foundation in HTML, CSS, and JavaScript, allowing me to create well-structured and interactive web applications. I specialize in React.js for building dynamic UIs and use Tailwind CSS to streamline styling for a modern and responsive design. To enhance user engagement, I incorporate GSAP and Motion for smooth animations and even work with React Three Fiber (R3F) to integrate 3D elements.</p>
+        <p class="leading-6 flowLeft">For the backend, I develop scalable and efficient applications using Node.js, Express.js, and MongoDB, ensuring seamless communication between the client and server.</p>
       </div>
       
       <!-- FRONTEND STACKS -->
@@ -598,14 +549,13 @@
       <h1 class="capitalize flowLeft text-red-600 tracking-wider z-10 font-extrabold text-5xl 2xl:text-6xl mb-10 2xl:mb-14" aria-label="Projects"><span class="w-full dark:bg-[#101010] bg-gray-300 z-10 relative before:w-[160%] after:w-[190%] before:h-[2px] after:h-[2px] before:absolute after:absolute before:-left-4 after:-left-4 before:top-9 after:bottom-5 2xl:before:top-11 2xl:after:bottom-7 before:bg-yellow-500 after:bg-yellow-500 before:z-[-1] after:z-[-1]">projects</span><span ></span></h1>
       <section class="mb-7 2xl:mb-14 *:mb-4">
         <p class="flowLeft leading-6">Every project I’ve worked on has helped me grow as a developer. From creating responsive and user-friendly interfaces to adding smooth animations and backend features, these projects have allowed me to apply what I’ve learned in real-world scenarios. They’ve also improved my understanding of UI/UX design, problem-solving, and writing clean, efficient code.</p>
-        <p class="flowLeft leading-6">I enjoy experimenting with animations to make websites more interactive and engaging while keeping performance in mind. Through each project, I push myself to explore new technologies, refine my coding skills, and build digital experiences that are both functional and visually appealing.</p>
         <p class="flowLeft leading-6">As a fresher, I see every project as an opportunity to learn, improve, and get closer to becoming a well-rounded developer.</p>
       </section>
 
       <h3 class="text-4xl 2xl:text-5xl flowLeft text-cyan-700 dark:text-cyan-500 font-Kumar mb-7 2xl:mb-11 capitalize">Full-Stack Projects</h3>
-      <section class="projects-container">
+      <section id="MERNProjects" class="projects-container">
         <!-- proplanner -->
-        <div class="project-items-animations" aria-label="task management website">
+        <div class="project-items-animations" aria-label="Task management website">
           <img loading="lazy" src="./src/assets/proplanner.png" alt="proplanner">
           <p>A full-stack task management web application designed for efficiency and ease of use. With seamless multi-device login support, you can access and manage your tasks from anywhere, anytime. The platform ensures top-notch security with robust user authentication, keeping your data private and accessible only to you.</p>
           <div><span class="text-red-500">Tech Stack:</span>  React.js, React-router-dom, Node.js, Express.js, MongoDB, Vite, JWT, Nodemailer and bcrypt</div>
@@ -636,28 +586,19 @@
 
       <h3 class="text-4xl 2xl:text-5xl flowLeft text-cyan-700 dark:text-cyan-500 font-Kumar mb-7 mt-7 2xl:mb-11 capitalize">Frontend Projects</h3>
       <section class="projects-container">
-        <!-- fake-store -->
-        <div class="project-items-animations" aria-label="Ecommerce website">
-          <img loading="lazy" src="./src/assets/fake-store.png" alt="fake-store">
-          <p>This e-commerce website is build uing the fake-store-API. This website has implemented with every essential features provided by fake-store-API like limiting data, sorting data, cart products and filtering data based on categories.</p>
-          <div><span class="text-red-500">Tech Stack:</span>  React.js, Vite, React-router-dom, React-error-boundary</div>
-          <a href="https://fake-store-kappa-seven.vercel.app/" target="_blank">
-            <button class="button" aria-label="Visit fake-store"><span class="z-20">Go To Webpage &#8594;</span></button>
-          </a>
-        </div>
         <!-- music player -->
         <div class="project-items-animations" aria-label="Galaxy music player">
-          <img loading="lazy" src="./src/assets/galaxy-music-player.png" alt="Music Player">
-          <p>A responsive and interactive music player built with Reactjs. It features play/pause, skip & switch song, along with a sleek UI that adapts across devices. Designed for a smooth user experience using the native audio API.</p>
-          <div><span class="text-red-500">Tech Stack:</span>  React.js, Native Audio API</div>
-          <a href="https://galaxy-music-player.vercel.app/" target="_blank">
+          <img loading="lazy" src="./src/assets/aurafy.png" alt="Music Player">
+          <p>Aurafy — Your sleek and personal music player. Upload, organize, and enjoy your favorite audio tracks with intuitive controls, speed adjustments, and a dynamic playlist experience.</p>
+          <div><span class="text-red-500">Tech Stack:</span>  React.js, Tailwind CSS, Native Audio API</div>
+          <a href="https://aurafy-ebon.vercel.app/" target="_blank">
             <button class="button" aria-label="Visit Galaxy music player"><span class="z-20">Go To Webpage &#8594;</span></button>
           </a>
         </div>
         <!-- TIC-TAC-TOE -->
         <div class="project-items-animations" aria-label="Tic tac toe game">
-          <img loading="lazy" src="./src/assets/tic-tac-toe-project.png" alt="TIC-TAC-TOE">
-          <p>Here's a classic Tic Tac Toe game you can enjoy with friends, family, or loved ones. Test your strategic skills and see who can be the first to line up three X's or O's. It’s the perfect way to spend quality time together and have some fun!</p>
+          <img loading="lazy" src="./src/assets/ttt.png" alt="TIC-TAC-TOE">
+          <p>Here's a classic Tic Tac Toe game you can enjoy with friends, family, or loved ones. Test your strategic skills and see who can be the first to line up three X's or O's.</p>
           <div><span class="text-red-500">Tech Stack:</span>  HTML, SASS and JavaScript</div>
           <a href="https://tic-tac-toe-sigma-livid.vercel.app/" target="_blank">
             <button class="button" aria-label="Visit tic-tac-toe"><span class="z-20">Go To Webpage &#8594;</span></button>
@@ -674,29 +615,19 @@
         </div>
         <!-- rock-paper-scissor -->
         <div class="project-items-animations" aria-label="Rock paper scissor game">
-          <img loading="lazy" src="./src/assets/rock-paper-scissor-project.png" alt="Rock-Paper-Scissor">
-          <p>Experience the classic game of Rock, Paper, Scissors, where you face off against the device. Choose your move and see how it stacks up against the device’s choice. Will you win, lose, or tie? It’s all about quick thinking and a bit of luck!</p>
+          <img loading="lazy" src="./src/assets/rps.png" alt="Rock-Paper-Scissor">
+          <p>Experience the classic game of Rock, Paper, Scissors, where you face off against the device. Choose your move and see how it stacks up against the device’s choice.</p>
           <div><span class="text-red-500">Tech Stack:</span>  HTML, SASS, JavaScript and Local Storage</div>
           <a href="https://rock-paper-scissor-tau-seven.vercel.app/" target="_blank">
             <button class="button" aria-label="Visit rock-paper-scissor"><span class="z-20">Go To Webpage &#8594;</span></button>
           </a>
         </div>
-        <!-- clock -->
-        <div class="project-items-animations" aria-label="Digital clock website">
-          <img loading="lazy" src="./src/assets/clock-project.png" alt="clock">
-          <p>Stay on top of every moment with our digital clock and make the most of your time using our easy-to-use stopwatch. Embrace the value of each second and manage your time effectively—because every moment counts.</p>
-          <div><span class="text-red-500">Tech Stack:</span>  HTML, CSS, JavaScript and Tailwind CSS</div>
-          <a href="https://timewizard.vercel.app/" target="_blank">
-            <button class="button" aria-label="Visit timewizard"><span class="z-20">Go To Webpage &#8594;</span></button>
-          </a>
-        </div>
-
       </section>
     </main>
 
 
     <footer class="border-t-[0.1px] dark:border-white border-black" aria-labelledby="footer-greet">
-      <div id="footer-greet" class="flex justify-center items-center text-center min-h-28 2xl:h-28 w-full px-4 py-6">Thank you for taking the time to explore my work! I truly appreciate your visit and hope you found it interesting and inspiring. If you’d like to connect, collaborate, or just have a chat, feel free to reach out. Looking forward to creating something amazing together!</div>
+      <div id="footer-greet" class="footer flex justify-center items-center text-center min-h-28 2xl:h-28 w-full px-4 py-6">Thank you for taking the time to explore my work! I truly appreciate your visit and hope you found it interesting and inspiring. If you’d like to connect, collaborate, or just have a chat, feel free to reach out. Looking forward to creating something amazing together!</div>
     </footer>
 
   </body>

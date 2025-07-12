@@ -5,14 +5,14 @@ gsap.registerPlugin(ScrollTrigger);
 
 // HOME PAGE ANIMATIONS
 let homeTl = gsap.timeline();
-if(window.innerWidth >= 768){
+if (window.innerWidth >= 768) {
     homeTl.from('.profileImg', { x: () => (window.innerWidth / 2), translate: '-50% 0', opacity: 0.7, duration: 0.7, delay: 0.9 })
-    .from('.profileName', { x: -200, opacity: 0, duration: 0.7, scale: 0.7 })
-    .from('.profileIntro', { x: -300, opacity: 0, duration: 0.7, scale: 0.5 }, '-=0.7');
-}else{
+        .from('.profileName', { x: -200, opacity: 0, duration: 0.7, scale: 0.7 })
+        .from('.profileIntro', { x: -300, opacity: 0, duration: 0.7, scale: 0.5 }, '-=0.7');
+} else {
     homeTl.from('.profileImg', { y: () => (window.innerHeight / 2), translate: '0 -50%', opacity: 0.7, duration: 0.7, delay: 0.9 })
-    .from('.profileName', { x: -200, opacity: 0, duration: 0.7, scale: 0.7 })
-    .from('.profileIntro', { x: -300, opacity: 0, duration: 0.7, scale: 0.5 }, '-=0.7');
+        .from('.profileName', { x: -200, opacity: 0, duration: 0.7, scale: 0.7 })
+        .from('.profileIntro', { x: -300, opacity: 0, duration: 0.7, scale: 0.5 }, '-=0.7');
 }
 
 let logosTl = gsap.timeline();
@@ -33,9 +33,9 @@ navSvg.addEventListener('mouseenter', () => {
     //this will create an animation if it's not already exists and,
     //'paused : true' property will pause the animation so that the outer 'play()' will trigger it
     if (!swipeAnimation) {
-        if(window.innerWidth >= 1536){
+        if (window.innerWidth >= 1536) {
             swipeAnimation = gsap.to(contactsList, { top: '7rem', duration: 0.55, paused: true });
-        }else{
+        } else {
             swipeAnimation = gsap.to(contactsList, { top: '4rem', duration: 0.55, paused: true });
         }
     }
@@ -54,38 +54,50 @@ function checkIsHovered() {
 
 
 // SCROLL TRIGGER ANIMATIONS:
-// gsap.utils.toArray(".flowLeft").forEach(element => {
-//     gsap.from(element, {
-//         x: 200,
-//         y: 10,
-//         scale: 0.7,
-//         opacity: 0,
-//         rotateY: 20,
-//         scrollTrigger: {
-//             trigger: element,
-//             start: "top 90%",
-//             end: "top 81%",
-//             toggleActions: "play none none reverse"
-//         }
-//     });
-// });
+gsap.utils.toArray(".flowLeft").forEach(element => {
+    gsap.from(element, {
+        x: 200,
+        y: 10,
+        scale: 0.7,
+        opacity: 0,
+        rotateY: 20,
+        scrollTrigger: {
+            trigger: element,
+            start: "top 90%",
+            end: "top 81%",
+            toggleActions: "play none none reverse"
+        }
+    });
+});
 
-// gsap.utils.toArray(".moveUp").forEach(element => {
-//     gsap.from(element, {
-//         y: 50,
-//         opacity: 0,
-//         scale: 0.6,
-//         scrollTrigger: {
-//             trigger: element,
-//             start: "top 90%",
-//             end: "top 81%",
-//             toggleActions: "play none none reverse"
-//         }
-//     });
-// });
+gsap.utils.toArray(".moveUp").forEach(element => {
+    gsap.from(element, {
+        y: 50,
+        opacity: 0,
+        scale: 0.6,
+        scrollTrigger: {
+            trigger: element,
+            start: "top 90%",
+            end: "top 81%",
+            toggleActions: "play none none reverse"
+        }
+    });
+});
+
+gsap.from(".footer", {
+    y: 10,
+    opacity: 0,
+    scale: 0.2,
+    scrollTrigger: {
+        trigger: ".footer",
+        start: "top 99%",
+        end: "top 93%",
+        toggleActions: "play none none reverse"
+    }
+})
 
 // TIMELINE WITH SCROLL TRIGGER
-if(window.innerWidth >= 768){
+if (window.innerWidth >= 768) {
     //achievements (js test)
     const jsTl = gsap.timeline({
         scrollTrigger: {
@@ -124,7 +136,7 @@ if(window.innerWidth >= 768){
     MongoDBTL.from('.MongoDBIntro', { y: 80, opacity: 0, duration: 0.5 })
         .from('.MongoDBBadge', { y: 80, opacity: 0, duration: 0.5 }, '-=0.2')
         .from('.MongoDBProgress', { y: 80, opacity: 0, duration: 0.5 }, '-=0.2');
-    
+
     //achievements (React.js test)
     const ReactTl = gsap.timeline({
         scrollTrigger: {
@@ -137,7 +149,7 @@ if(window.innerWidth >= 768){
     ReactTl.from('.reactIntro', { y: 80, opacity: 0, duration: 0.5 })
         .from('.reactBadge', { y: 80, opacity: 0, duration: 0.5 }, '-=0.2')
         .from('.reactProgress', { y: 80, opacity: 0, duration: 0.5 }, '-=0.2');
-    
+
     //achievements (Node.js test)
     const nodeTl = gsap.timeline({
         scrollTrigger: {
@@ -151,13 +163,13 @@ if(window.innerWidth >= 768){
         .from('.nodeBadge', { y: 80, opacity: 0, duration: 0.5 }, '-=0.2')
         .from('.nodeProgress', { y: 80, opacity: 0, duration: 0.5 }, '-=0.2');
 
-}else{
-    gsap.utils.toArray('.animationBelow768').forEach(element =>{
-        gsap.from(element , {
+} else {
+    gsap.utils.toArray('.animationBelow768').forEach(element => {
+        gsap.from(element, {
             y: 80,
             opacity: 0,
             duration: 0.5,
-            scrollTrigger:{
+            scrollTrigger: {
                 trigger: element,
                 start: 'top 80%',
                 end: 'top 60%',
@@ -213,19 +225,19 @@ otherStacksTl.from('#git', { y: 50, opacity: 0, duration: 0.4 })
     .from('#github', { y: 50, opacity: 0, duration: 0.4 }, '-=0.2')
     .from('#gsap', { y: 50, opacity: 0, duration: 0.4 }, '-=0.2')
     .from('#vite', { y: 50, opacity: 0, duration: 0.4 }, '-=0.2')
-    .from('#react-three-fiber', { y: 50, opacity: 0, duration : 0.4 }, '-=0.2')
-    .from('#Motion', { y: 50, opacity: 0, duration : 0.4 }, '-=0.2')
-  
+    .from('#react-three-fiber', { y: 50, opacity: 0, duration: 0.4 }, '-=0.2')
+    .from('#Motion', { y: 50, opacity: 0, duration: 0.4 }, '-=0.2')
+
 
 //PROJECT ANIMATIONS
-gsap.utils.toArray('.project-items-animations').forEach((item)=>{
+gsap.utils.toArray('.project-items-animations').forEach((item) => {
     gsap.from(item, {
-        y: 50, 
-        opacity: 0, 
+        y: 50,
+        opacity: 0,
         duration: 0.4,
-        scrollTrigger:{
-            trigger : item,
-            start : 'top 80%',
+        scrollTrigger: {
+            trigger: item,
+            start: 'top 80%',
             end: 'top 50%',
             toggleActions: 'play none none reverse'
         }
@@ -240,7 +252,7 @@ const aboutSection = document.querySelector('#about');
 const skillSection = document.querySelector('#skills');
 const projectSection = document.querySelector('#projects');
 
-function checkForScrollView(){
+function checkForScrollView() {
     let halfWindowHeight = window.innerHeight / 2;
 
     let homeBottom = homeSection.getBoundingClientRect().bottom;
@@ -260,16 +272,16 @@ function checkForScrollView(){
 }
 checkForScrollView();
 
-window.addEventListener('scroll', () => {checkForScrollView()});
+window.addEventListener('scroll', () => { checkForScrollView() });
 
-navItems.addEventListener('click', (e)=> {
+navItems.addEventListener('click', (e) => {
     if (e.target.getAttribute('data-link') === 'home reference') {
         homeSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
     } else if (e.target.getAttribute('data-link') === 'about reference') {
         aboutSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
     } else if (e.target.getAttribute('data-link') === 'skills reference') {
         skillSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    } else if(e.target.getAttribute('data-link') === 'projects reference'){
+    } else if (e.target.getAttribute('data-link') === 'projects reference') {
         projectSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 });
