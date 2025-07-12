@@ -84,18 +84,6 @@ gsap.utils.toArray(".moveUp").forEach(element => {
     });
 });
 
-gsap.from(".footer", {
-    y: 10,
-    opacity: 0,
-    scale: 0.2,
-    scrollTrigger: {
-        trigger: ".footer",
-        start: "top 99%",
-        end: "top 93%",
-        toggleActions: "play none none reverse"
-    }
-})
-
 // TIMELINE WITH SCROLL TRIGGER
 if (window.innerWidth >= 768) {
     //achievements (js test)
@@ -110,19 +98,6 @@ if (window.innerWidth >= 768) {
     jsTl.from('.jsIntro', { y: 80, opacity: 0, duration: 0.5 })
         .from('.jsBadge', { y: 80, opacity: 0, duration: 0.5 }, '-=0.2')
         .from('.jsProgress', { y: 80, opacity: 0, duration: 0.5 }, '-=0.2');
-
-    //achievements (html css test)
-    const htmlcssTl = gsap.timeline({
-        scrollTrigger: {
-            trigger: "#htmlcssTest",
-            start: "top 80%",
-            end: "top 50%",
-            toggleActions: "play none none reverse",
-        }
-    });
-    htmlcssTl.from('.htmlcssIntro', { y: 80, opacity: 0, duration: 0.5 })
-        .from('.htmlcssBadge', { y: 80, opacity: 0, duration: 0.5 }, '-=0.2')
-        .from('.htmlcssProgress', { y: 80, opacity: 0, duration: 0.5 }, '-=0.2');
 
     //achievements (MongoDB test)
     const MongoDBTL = gsap.timeline({

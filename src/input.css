@@ -1,33 +1,36 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-nav > ul::before{
-    content: '';
+
+nav > ul::before {
+    content: "";
     height: 100%;
     width: var(--width);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-top: 2px solid rgb(59, 59, 59);
-    background: linear-gradient(to top, transparent, gray 99%,rgb(137, 137, 137));
-    position:absolute;
+    background: linear-gradient(to top, transparent, gray 99%, rgb(137, 137, 137));
+    position: absolute;
     left: calc(var(--active) * var(--width));
     transition: all 0.4s ease-in;
 }
 @font-face {
-    font-family: 'Kumar One';
-    src: url('./assets/KumarOne-Regular.ttf');
+    font-family: "Kumar One";
+    src: url("./assets/KumarOne-Regular.ttf");
 }
 
-@layer components{
+@layer components {
     ::-webkit-scrollbar {
         display: none;
     }
-    *{
+    * {
         scrollbar-width: none;
     }
-    *{
+    * {
         -ms-overflow-style: none;
     }
-    .font-Kumar{
+    .font-Kumar {
         font-family: "Kumar One", sans-serif;
         font-weight: 400;
         padding-top: 0.7rem;
@@ -40,29 +43,28 @@ nav > ul::before{
         display: grid;
         aspect-ratio: 1;
         border-radius: 50%;
-        -webkit-mask: radial-gradient(50% 50%,#0000 calc(99% - 2*var(--s)),#000 calc(101% - 2*var(--s)));
+        -webkit-mask: radial-gradient(50% 50%, #0000 calc(99% - 2 * var(--s)), #000 calc(101% - 2 * var(--s)));
         animation: r 8s cubic-bezier(0.6, 0.2, 0, 0.8) infinite;
     }
-  
+
     .img-animation:before {
         content: "";
-        background: conic-gradient(from 25deg,#f8a201 25%,#fa2402 0 50%,#fdb3b0 0 75%,#02dde1 0);
-        -webkit-mask: repeating-conic-gradient(#0000 0 25deg,#000 23% 25%),
-        radial-gradient(var(--s) at var(--s) 50%,#000 97%,#0000) 
-            left/calc(100% - 2*var(--s)) 100% repeat-x,
-        radial-gradient(var(--s) at 50% var(--s),#000 97%,#0000) 
-            top /100% calc(100% - 2*var(--s)) repeat-y;
+        background: conic-gradient(from 25deg, #f8a201 25%, #fa2402 0 50%, #fdb3b0 0 75%, #02dde1 0);
+        -webkit-mask:
+            repeating-conic-gradient(#0000 0 25deg, #000 23% 25%),
+            radial-gradient(var(--s) at var(--s) 50%, #000 97%, #0000) left/calc(100% - 2 * var(--s)) 100% repeat-x,
+            radial-gradient(var(--s) at 50% var(--s), #000 97%, #0000) top / 100% calc(100% - 2 * var(--s)) repeat-y;
     }
-  
+
     @keyframes r {
-        to{
+        to {
             transform: rotate(1turn);
         }
     }
 
-    .homeContainer-logos{
+    .homeContainer-logos {
         @apply relative size-11 2xl:size-20 max-md:size-9 rounded-full transition-all duration-500 flex justify-center items-center capitalize font-semibold;
-        &::before{
+        &::before {
             content: attr(data-social);
             padding-inline: 18px;
             border-radius: 30px;
@@ -77,28 +79,28 @@ nav > ul::before{
             font-size: 17.3px;
         }
     }
-    .homeContainer-logos:hover{
+    .homeContainer-logos:hover {
         background-color: var(--accent-color);
-        &::before{
+        &::before {
             top: -32px;
             opacity: 1;
             transform: rotate(0) scale(1);
             transition: all 0.5s ease;
         }
     }
-    .text-shadow-below-1536{
+    .text-shadow-below-1536 {
         text-shadow: 1px 1px black;
     }
-    .text-shadow-above-1536{
+    .text-shadow-above-1536 {
         text-shadow: 2px 2px black;
     }
-    .nav-items{
+    .nav-items {
         @apply w-20 2xl:w-32 flex justify-center items-center cursor-pointer text-shadow-below-1536 2xl:text-shadow-above-1536;
     }
-    .nav-items > div{
+    .nav-items > div {
         position: relative;
-        &::before{
-            content: '';
+        &::before {
+            content: "";
             position: absolute;
             bottom: 0;
             width: 0;
@@ -108,8 +110,8 @@ nav > ul::before{
             transition: all 0.3s ease-out;
         }
     }
-    .nav-items:hover > div{
-        &::before{
+    .nav-items:hover > div {
+        &::before {
             width: 100%;
             left: 0;
         }
@@ -127,7 +129,7 @@ nav > ul::before{
         transform: perspective(200px) rotateX(45deg);
         animation: spinner-wiggle 1.2s infinite;
     }
-  
+
     .loader:before,
     .loader:after {
         content: "";
@@ -137,53 +139,55 @@ nav > ul::before{
         width: inherit;
         height: inherit;
         border-radius: inherit;
-        opacity: .05;
+        opacity: 0.05;
         border: inherit;
         border-color: transparent;
-        animation: spinner-spin 1.2s cubic-bezier(0.6, 0.2, 0, 0.8) infinite, spinner-fade 1.2s linear infinite;
+        animation:
+            spinner-spin 1.2s cubic-bezier(0.6, 0.2, 0, 0.8) infinite,
+            spinner-fade 1.2s linear infinite;
     }
-  
+
     .loader:before {
         border-top-color: #66e6ff;
     }
-    
+
     .loader:after {
         border-top-color: #f0db75;
         animation-delay: 0.3s;
     }
-  
+
     @keyframes spinner-spin {
         100% {
-        transform: rotate(360deg);
-        }
-    }
-  
-    @keyframes spinner-fade {
-        20% {
-        opacity: .1;
-        }
-    
-        40% {
-        opacity: 1;
-        }
-    
-        60% {
-        opacity: .1;
+            transform: rotate(360deg);
         }
     }
 
-    .tech-stacks-container{
+    @keyframes spinner-fade {
+        20% {
+            opacity: 0.1;
+        }
+
+        40% {
+            opacity: 1;
+        }
+
+        60% {
+            opacity: 0.1;
+        }
+    }
+
+    .tech-stacks-container {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(150px , 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
         gap: 20px;
         margin-bottom: 7rem;
-        &>div{
+        & > div {
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
             align-items: center;
             position: relative;
-            &>div:nth-child(1){
+            & > div:nth-child(1) {
                 border: 1.5px solid gray;
                 border-radius: 14px;
                 width: 100%;
@@ -191,12 +195,12 @@ nav > ul::before{
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                &>svg{
+                & > svg {
                     width: 75%;
                     aspect-ratio: 1/1;
                 }
             }
-            &>div:nth-child(2){
+            & > div:nth-child(2) {
                 width: 100%;
                 color: black;
                 background-color: var(--logo-color);
@@ -208,35 +212,51 @@ nav > ul::before{
         }
     }
 
-    .projects-container{
+    .projects-container {
         display: grid;
         grid-template-columns: repeat(auto-fill, 550px);
         gap: 30px;
-        &>div{
+        & > div {
             height: 100%;
             padding: 8px;
             border-radius: 15px;
             position: relative;
             border: 1px solid grey;
             box-shadow: inset 0 0 2px 0.3px grey;
-            &>img{
+            & > img {
                 width: 100%;
                 height: 250px;
                 object-position: center;
                 object-fit: cover;
-                border-radius: 10px 10px 0 0 ;
+                border-radius: 10px 10px 0 0;
                 margin-bottom: 8px;
             }
-            &>p{
+            & > h2 {
+                font-weight: bold;
+                letter-spacing: 0.4px;
+                font-size: 1.2rem;
                 margin-bottom: 7px;
             }
-            &>div{
-                margin-bottom: 60px;
+            & > p {
+                margin-bottom: 7px;
+                font-size: 0.9rem;
             }
-            & > a{
-                position: absolute;
-                bottom: 10px;
-                left: 8px;
+            & > div {
+                margin-top: 10px;
+                display: flex;
+                gap: 5px;
+                flex-wrap: wrap;
+
+                & > span {
+                    font-size: 0.8rem;
+                    padding-inline: 4px;
+                    padding-block: 2px;
+                    border-radius: 5px;
+                    background-color: rgba(36, 99, 113, 0.829);
+                    color: rgb(43, 255, 248);
+                }
+            }
+            & > a {
                 padding: 5px 25px 5px 10px;
                 border-top-right-radius: 20px;
                 border-bottom-right-radius: 20px;
@@ -246,13 +266,13 @@ nav > ul::before{
                 margin: 15px 0 8px 0;
                 text-align: right;
                 transition: all 0.4s ease;
-                &:hover{
+                &:hover {
                     padding: 5px 25px 5px 50px;
                 }
             }
         }
     }
-    .contact-options{
+    .contact-options {
         display: inline-block;
         padding-left: 10px;
         padding-top: 3px;
@@ -262,57 +282,52 @@ nav > ul::before{
         border-radius: 20px 0 0 20px;
         border-left: 2px solid black;
         text-align: start;
-        transition: width 0.5s ease, background-color 0.4s ease;
+        transition:
+            width 0.5s ease,
+            background-color 0.4s ease;
     }
-    .contact-options:hover{
+    .contact-options:hover {
         width: 120%;
-        background: linear-gradient(to right, var(--accent), transparent,transparent);
+        background: linear-gradient(to right, var(--accent), transparent, transparent);
     }
-    .contactBox-shadow{
+    .contactBox-shadow {
         box-shadow: inset 0 0 3px black;
     }
 
     /* media queries */
-    @media (max-width: 650px){
-        .projects-container{
+    @media (max-width: 650px) {
+        .projects-container {
             grid-template-columns: 1fr;
         }
     }
-    @media (min-width: 1536px){
-        .loader{
+    @media (min-width: 1536px) {
+        .loader {
             width: 300px;
             height: 300px;
             border-radius: 150px;
         }
-        .tech-stacks-container{
-            grid-template-columns: repeat(auto-fill, minmax(200px , 1fr));
+        .tech-stacks-container {
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
             gap: 40px;
         }
-        .projects-container{
-           grid-template-columns: repeat(auto-fill, 40vw);
-           gap: 50px;
-           &>div{
-            padding: 15px;
-            &>img{
-                height: 350px;
-                margin-bottom: 13px;
-            }
-            &>p{
-                margin-bottom: 17px;
-            }
-            &>div{
-                margin-bottom: 110px;
-            }
-            & > a{
-                padding: 7px 35px 7px 17px;
-                margin: 22px 0 12px 0;
-                &:hover{
-                    padding: 7px 35px 7px 83px;
+        .projects-container {
+            grid-template-columns: repeat(auto-fill, 40vw);
+            gap: 50px;
+            & > div {
+                padding: 15px;
+                & > img {
+                    height: 350px;
+                    margin-bottom: 13px;
+                }
+                & > a {
+                    margin: 22px 0 12px 0;
+                    &:hover {
+                        padding: 7px 35px 7px 83px;
+                    }
                 }
             }
         }
-        }
-        .contact-options{
+        .contact-options {
             padding-left: 20px;
             padding-top: 7px;
             padding-bottom: 8.2px;
@@ -320,20 +335,20 @@ nav > ul::before{
         }
     }
     @media (prefers-color-scheme: dark) {
-        .projects-container{
-            &>div{
+        .projects-container {
+            & > div {
                 border: 1px solid grey;
                 box-shadow: inset 0 0 2px 0.3px grey;
-                & > a{
+                & > a {
                     border-block: 1px solid grey;
                     border-right: 1px solid grey;
                 }
             }
         }
-        .contactBox-shadow{
+        .contactBox-shadow {
             box-shadow: inset 0 0 3px white;
         }
-        .contact-options{
+        .contact-options {
             border-left: 2px solid white;
             text-shadow: 1px 1px black;
         }

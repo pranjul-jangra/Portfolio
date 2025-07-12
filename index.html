@@ -18,7 +18,7 @@
     <link rel="icon" href="./src/assets/weblogo.png" type="image/png" />
     <script type="module" src="./src/animations.js" defer></script>
   </head>
-  <body class="dark:bg-[#101010] dark:text-white text-black bg-gray-300 2xl:text-3xl bg-cover bg-center text-balance font-sans overflow-x-clip">
+  <body class="dark:bg-[#101010] dark:text-white text-black bg-gray-100 2xl:text-3xl bg-cover bg-center text-balance font-sans overflow-x-clip">
 
 
 <!-- --------------------------------------------------------------------------------------------------------------------------------- -->
@@ -26,7 +26,7 @@
 <!-- --------------------------------------------------------------------------------------------------------------------------------- -->
 
 
-    <nav class="flex items-center text-white px-7 2xl:px-10 h-12 2xl:h-20 dark:bg-zinc-950 bg-gray-700 capitalize z-40 fixed top-0 w-screen  shadow-sm dark:shadow-white shadow-black" aria-label="Navbar">
+    <nav class="flex items-center text-white px-7 2xl:px-10 h-12 2xl:h-20 dark:bg-zinc-950 bg-gray-900 capitalize z-40 fixed top-0 w-screen border-b border-black" aria-label="Navbar">
       <div class="text-2xl 2xl:text-6xl tracking-wider font-Kumar mr-auto" aria-label="Pranjul">pranjul</div>
       <ul id="nav-items" class="max-md:hidden flex gap-1 relative" style="--width:calc(100% / 4); --active:0;">
         <li class="nav-items"><div data-link="home reference" aria-label="Switch to home page">home</div></li>
@@ -34,7 +34,7 @@
         <li class="nav-items"><div data-link="skills reference" aria-label="Switch to skills page">skills</div></li>
         <li class="nav-items"><div data-link="projects reference" aria-label="Switch to projects page">projects</div></li>
       </ul>
-      <svg class="navSvg fill-white size-8 2xl:size-12 ml-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="contactRef" aria-label="Contact options">
+      <svg class="navSvg fill-white w-8 h-8 2xl:w-12 2xl:h-12 ml-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="contactRef" aria-label="Contact options">
         <path d="M19 6.184V5a3.003 3.003 0 0 0-3-3H6a2.987 2.987 0 0 0-2.99 2.95c0 .017-.01.032-.01.05v14a3.003 3.003 0 0 0 3 3h12a3.003 3.003 0 0 0 3-3V9a2.995 2.995 0 0 0-2-2.816ZM6 4h10a1.001 1.001 0 0 1 1 1v1H6.122A1.003 1.003 0 1 1 6 4Zm13 15a1.001 1.001 0 0 1-1 1H6a1.001 1.001 0 0 1-1-1V7.83A3.001 3.001 0 0 0 6 8h12a1.001 1.001 0 0 1 1 1Z"></path>
         <path d="M14.381 13.805A2.97 2.97 0 0 0 15 12a3 3 0 0 0-6 0 2.97 2.97 0 0 0 .619 1.805A3.984 3.984 0 0 0 8 17v1a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-1a3.984 3.984 0 0 0-1.619-3.195ZM11 12a1 1 0 1 1 1 1 1.001 1.001 0 0 1-1-1Zm-1 5a2 2 0 0 1 4 0Z"></path>
       </svg>
@@ -57,13 +57,13 @@
       <section class="w-screen h-[78vh] max-md:h-fit">
         <div class="flex max-md:flex-col justify-center items-center gap-8 px-auto w-screen h-full">
           <div class="flex justify-center items-center z-20 profileImg max-md:mt-16" aria-label="Profile photo">
-            <div class="img-animation z-0 flex-shrink-1 size-[245px] 2xl:size-[391px] max-md:size-[197px] rounded-full"></div>
+            <div class="img-animation z-0 flex-shrink-1 w-[245px] h-[245px] 2xl:w-[391px] 2xl:h-[391px] max-md:w-[197px] max-md:shize-[197px] rounded-full"></div>
             <img class="w-60 2xl:w-96 flex-shrink-1 max-md:w-48 aspect-square z-10 rounded-full bg-center bg-cover border-2 border-black" src="./src/assets/profilePhoto.webp" alt="Profile photo" >
           </div>
           <article class="w-[65vw] max-md:w-[92vw] max-sm:w-[96vw] text-balance max-md:mb-16">
             <div class="profileName text-4xl 2xl:text-6xl mb-7 2xl:mb-14" aria-label="Profile intro">Hi, I'm <P class="text-red-600 font-bold tracking-wider">Pranjul</P> A Full-Stack Developer</div>
-            <p class="profileIntro mb-5" aria-label="Profile description">I love building user-friendly, responsive, and dynamic web applications that create meaningful experiences. While I’m still growing my expertise, I have hands-on experience with React.js, Node.js, Express.js, and MongoDB, and I enjoy bringing ideas to life through clean and efficient code.</p>
-            <p class="profileIntro leading-6">From frontend design to backend logic, I’m always learning, improving, and pushing myself to build better, smarter solutions.</p>
+            <p class="profileIntro mb-5" aria-label="Profile description">I design and develop modern web applications that are intuitive, efficient, and scalable. My focus lies in crafting seamless user experiences backed by strong technical architecture and clean, maintainable code.</p>
+            <p class="profileIntro leading-6">Driven by curiosity and a deep interest in digital problem-solving, I’m constantly learning and evolving — aiming to build applications that not only work well but feel great to use.</p>
           </article>
         </div>
       </section>
@@ -104,12 +104,11 @@
 
 
     <main id="about" class="w-screen overflow-x-clip px-16 max-md:px-10 max-sm:px-5 pt-20" aria-label="About page">
-      <h1 class="flowLeft capitalize text-red-600 tracking-wider z-10 font-extrabold text-5xl 2xl:text-6xl mb-10 2xl:mb-14" aria-label="About me"><span class="w-full dark:bg-[#101010] bg-gray-300 z-10 relative before:w-[160%] after:w-[190%] before:h-[2px] after:h-[2px] before:absolute after:absolute before:-left-4 after:-left-4 before:top-9 after:bottom-5 2xl:before:top-11 2xl:after:bottom-7 before:bg-yellow-500 after:bg-yellow-500 before:z-[-1] after:z-[-1]">Meet Pranjul</span></h1>
+      <h1 class="flowLeft capitalize text-red-600 tracking-wider z-10 font-extrabold text-5xl 2xl:text-6xl mb-10 2xl:mb-14" aria-label="About me"><span class="w-full dark:bg-[#101010] bg-gray-100 z-10 relative before:w-[160%] after:w-[190%] before:h-[2px] after:h-[2px] before:absolute after:absolute before:-left-4 after:-left-4 before:top-9 after:bottom-5 2xl:before:top-11 2xl:after:bottom-7 before:bg-yellow-500 after:bg-yellow-500 before:z-[-1] after:z-[-1]">Meet Pranjul</span></h1>
       <section class="mb-10 2xl:mb-14" aria-labelledby="about-intro">
         <article class="mb-9 2xl:mb-12 *:mb-3"> 
-          <p id="about-intro" class="flowLeft">A full stack developer.</p>
-          <p class="flowLeft leading-6">I specialize in building responsive, user-friendly, and visually engaging websites that focus on delivering a great user experience.</p>
-          <p class="flowLeft leading-6">I've built a solid foundation in backend development with the MERN stack (MongoDB, Express.js, React.js, Node.js). I work on developing well-structured, secure, and scalable server-side solutions that efficiently manage data and interactions.</p>
+          <p class="flowLeft leading-6">I approach development with a user-first mindset — blending visual clarity with meaningful interaction to build digital experiences that leave a lasting impression.</p>
+          <p class="flowLeft leading-6">My development process emphasizes structure, security, and long-term scalability. I enjoy breaking down complex problems into elegant, performance-driven solutions that align with both business goals and user needs.</p>
         </article>
         <h3 class="pl-9 mb-9 2xl:mb-12 flowLeft capitalize text-4xl 2xl:text-5xl text-cyan-700 dark:text-cyan-500 font-Kumar" aria-label="Future goal">What’s Next</h3>
         <article class="pl-9">
@@ -123,23 +122,23 @@
         <div class="border-l-2 dark:border-gray-200 border-black rounded-sm ml-2 pl-7">
           <article class="mb-8 2xl:mb-12 flowLeft" aria-labelledby="ad-4">
             <p id="ad-4" class="font-bold mb-2 2xl:mb-4">Full-stack Development - (Self-Taught)</p>
+            <p class="text-sm 2xl:text-2xl">Fatehabad, Haryana</p>
             <p class="text-sm 2xl:text-2xl">Dec,2024 - Present</p>
           </article>
           <article class="mb-8 2xl:mb-12 flowLeft" aria-labelledby="ad-3">
             <p id="ad-3" class="font-bold mb-2 2xl:mb-4">Frontend Development - (Self-Taught)</p>
+            <p class="text-sm 2xl:text-2xl">Fatehabad, Haryana</p>
             <p class="text-sm 2xl:text-2xl">June,2024 - Nov,2024</p>
           </article>
           <article class="mb-8 2xl:mb-12 flowLeft" aria-labelledby="ad-2">
             <p id="ad-2" class="font-bold mb-2 2xl:mb-4">Bachelor Of Science(Computer Science) - Manohar Memorial College</p>
             <p class="text-sm 2xl:text-2xl">Fatehabad, Haryana</p>
             <p class="text-sm 2xl:text-2xl">2021-2024</p>
-            <p class="text-sm 2xl:text-2xl">grade: B</p>
           </article>
           <article class="mb-8 2xl:mb-12 flowLeft" aria-labelledby="ad-1">
             <p id="ad-1" class="font-bold mb-2 2xl:mb-4">12<sup>th</sup> Grade - ST JOHN'S International School</p>
             <p class="text-sm 2xl:text-2xl">Bhodia Khera, Fatehabad, Haryana</p>
             <p class="text-sm 2xl:text-2xl">2020-2021</p>
-            <p class="text-sm 2xl:text-2xl">Percentage: 77%</p>
           </article>
         </div>
       </section>
@@ -152,13 +151,13 @@
 
 
     <main class="w-screen overflow-x-clip px-16 max-md:px-10 max-sm:px-5 pt-36" aria-label="achievements">
-      <h1 class="flowLeft capitalize text-red-600 tracking-wider z-10 font-extrabold text-5xl 2xl:text-6xl mb-10 2xl:mb-14" aria-label="Achievements"><span class="w-full dark:bg-[#101010] bg-gray-300 z-10 relative before:w-[140%] after:w-[170%] before:h-[2px] after:h-[2px] before:absolute after:absolute before:-left-4 after:-left-4 before:top-9 after:bottom-5 2xl:before:top-11 2xl:after:bottom-7 before:bg-yellow-500 after:bg-yellow-500 before:z-[-1] after:z-[-1]">achievements</span><span ></span></h1>
+      <h1 class="flowLeft capitalize text-red-600 tracking-wider z-10 font-extrabold text-5xl 2xl:text-6xl mb-10 2xl:mb-14" aria-label="Achievements"><span class="w-full dark:bg-[#101010] bg-gray-100 z-10 relative before:w-[140%] after:w-[170%] before:h-[2px] after:h-[2px] before:absolute after:absolute before:-left-4 after:-left-4 before:top-9 after:bottom-5 2xl:before:top-11 2xl:after:bottom-7 before:bg-yellow-500 after:bg-yellow-500 before:z-[-1] after:z-[-1]">achievements</span><span ></span></h1>
 
       <!-- javaScript badge  -->
       <section class="mb-36 2xl:mb-44" aria-labelledby="js-test">
         <h3 id="js-test" class="w-full moveUp text-center text-4xl 2xl:text-5xl text-cyan-700 dark:text-cyan-500 font-Kumar mb-11 2xl:mb-20 capitalize">Javascript Test</h3>
         <article id="jsTest" class="flex max-md:flex-col justify-around items-center max-md:gap-14 mb-11 2xl:mb-16">
-          <div class="flex animationBelow768 jsIntro flex-col py-4 px-2 2xl:py-7 2xl:px-4 shadow-md shadow-[#f5b300] rounded-lg ml-16 2xl:ml-0 max-md:ml-0">
+          <div class="flex animationBelow768 jsIntro flex-col py-4 px-3 2xl:py-7 2xl:px-4 shadow-md shadow-[#f5b300] border border-[#f5b300]/30 rounded-lg ml-16 2xl:ml-0 max-md:ml-0">
             <p class="mb-3 font-bold">Pranjul</p>
             <p class="text-sm">Candidate ID: 1123984</p>
             <p class="text-sm">Date: 25 Nov, 2024</p>
@@ -181,7 +180,7 @@
           </div>
         </article>
         <article class="w-full" aria-label="What has been covered in javascript test">
-          <div class="w-full moveUp text-center mb-7 2xl:mb-10 text-2xl 2xl:text-4xl">What Covered In It:</div>
+          <div class="w-full moveUp text-center mb-7 2xl:mb-10 text-2xl 2xl:text-4xl font-semibold">What’s Covered</div>
           <ul class="flex max-md:flex-col justify-center items-center gap-7 2xl:gap-14 w-full md:list-disc marker:text-emerald-500">
             <li class="moveUp" aria-label="Fundamentals">Fundamentals</li>
             <li class="moveUp" aria-label="Async/Await">Async/Await</li>
@@ -197,7 +196,7 @@
       <section class="mb-36 2xl:mb-44" aria-labelledby="react-test">
         <h3 id="react-test" class="w-full moveUp text-center text-4xl 2xl:text-5xl text-cyan-700 dark:text-cyan-500 font-Kumar mb-11 2xl:mb-20 capitalize">React.js Test</h3>
         <article id="reactTest" class="flex max-md:flex-col justify-around items-center max-md:gap-14 mb-11 2xl:mb-16">
-          <div class="flex animationBelow768 reactIntro flex-col py-4 px-2 2xl:py-7 2xl:px-4 shadow-md shadow-[#94c72f] rounded-lg ml-16 2xl:ml-0 max-md:ml-0">
+          <div class="flex animationBelow768 reactIntro flex-col py-4 px-3 2xl:py-7 2xl:px-4 shadow-md shadow-[#94c72f] border border-[#94c72f]/30 rounded-lg ml-16 2xl:ml-0 max-md:ml-0">
             <p class="mb-3 font-bold">Pranjul</p>
             <p class="text-sm">Candidate ID: 1123984</p>
             <p class="text-sm">Date: 02 Mar, 2025</p>
@@ -220,7 +219,7 @@
           </div>
         </article>
         <article class="w-full" aria-label="What has been covered in react js test">
-          <div class="w-full moveUp text-center mb-7 2xl:mb-10 text-2xl 2xl:text-4xl">What Covered In It:</div>
+          <div class="w-full moveUp text-center mb-7 2xl:mb-10 text-2xl 2xl:text-4xl font-semibold">What’s Covered</div>
           <ul class="flex max-md:flex-col justify-center items-center gap-7 2xl:gap-14 w-full md:list-disc marker:text-emerald-500">
             <li class="moveUp" aria-label="State Management">State Management</li>
             <li class="moveUp" aria-label="Components">Components</li>
@@ -236,7 +235,7 @@
       <section class="mb-36 2xl:mb-44" aria-labelledby="node-test">
         <h3 id="node-test" class="w-full moveUp text-center text-4xl 2xl:text-5xl text-cyan-700 dark:text-cyan-500 font-Kumar mb-11 2xl:mb-20 capitalize">NodeJS Test</h3>
         <article id="nodeTest" class="flex max-md:flex-col justify-around items-center max-md:gap-14 mb-11 2xl:mb-16">
-          <div class="flex animationBelow768 nodeIntro flex-col py-4 px-2 2xl:py-7 2xl:px-4 shadow-md shadow-[#94c72f] rounded-lg ml-16 2xl:ml-0 max-md:ml-0">
+          <div class="flex animationBelow768 nodeIntro flex-col py-4 px-3 2xl:py-7 2xl:px-4 shadow-md shadow-[#94c72f] border border-[#94c72f]/30 rounded-lg ml-16 2xl:ml-0 max-md:ml-0">
             <p class="mb-3 font-bold">Pranjul</p>
             <p class="text-sm">Candidate ID: 1123984</p>
             <p class="text-sm">Date: 13 Mar, 2025</p>
@@ -259,7 +258,7 @@
           </div>
         </article>
         <article class="w-full" aria-label="What has been covered in node js test">
-          <div class="w-full moveUp text-center mb-7 2xl:mb-10 text-2xl 2xl:text-4xl">What Covered In It:</div>
+          <div class="w-full moveUp text-center mb-7 2xl:mb-10 text-2xl 2xl:text-4xl font-semibold">What’s Covered</div>
           <ul class="flex max-md:flex-col justify-center items-center gap-7 2xl:gap-14 w-full md:list-disc marker:text-emerald-500">
             <li class="moveUp" aria-label="Node js">Node.js</li>
             <li class="moveUp" aria-label="Error Handling and Debugging">Error Handling and Debugging</li>
@@ -275,7 +274,7 @@
       <section class="mb-20 2xl:mb-28" aria-labelledby="mongo-test">
         <h3 id="mongo-test" class="w-full moveUp text-center text-4xl 2xl:text-5xl text-cyan-700 dark:text-cyan-500 font-Kumar mb-11 2xl:mb-20 capitalize">MongoDB Test</h3>
         <article id="MongoDBTest" class="flex max-md:flex-col justify-around items-center max-md:gap-14 mb-11 2xl:mb-16">
-          <div class="flex animationBelow768 MongoDBIntro flex-col py-4 px-2 2xl:py-7 2xl:px-4 shadow-md shadow-[#94c72f] rounded-lg ml-16 2xl:ml-0 max-md:ml-0">
+          <div class="flex animationBelow768 MongoDBIntro flex-col py-4 px-3 2xl:py-7 2xl:px-4 shadow-md shadow-[#94c72f] border border-[#94c72f]/30 rounded-lg ml-16 2xl:ml-0 max-md:ml-0">
             <p class="mb-3 font-bold">Pranjul</p>
             <p class="text-sm">Candidate ID: 1123984</p>
             <p class="text-sm">Date: 25 Feb, 2025</p>
@@ -298,7 +297,7 @@
           </div>
         </article>
         <article class="w-full" aria-label="What has been covered in mongodb test">
-          <div class="w-full moveUp text-center mb-7 2xl:mb-10 text-2xl 2xl:text-4xl">What Covered In It:</div>
+          <div class="w-full moveUp text-center mb-7 2xl:mb-10 text-2xl 2xl:text-4xl font-semibold">What’s Covered</div>
           <ul class="flex max-md:flex-col justify-center items-center gap-7 2xl:gap-14 w-full md:list-disc marker:text-emerald-500">
             <li class="moveUp" aria-label="Replication and Sharding">Replication and Sharding</li>
             <li class="moveUp" aria-label="Indexing">Indexing</li>
@@ -317,10 +316,10 @@
 
 
     <main id="skills" class="w-screen overflow-x-clip px-16 max-md:px-10 max-sm:px-5 pt-20" aria-label="Skills page">
-      <h1 class="capitalize flowLeft text-red-600 tracking-wider z-10 font-extrabold text-5xl 2xl:text-6xl mb-10 2xl:mb-14" aria-label="Skills"><span class="w-full dark:bg-[#101010] bg-gray-300 z-10 relative before:w-[160%] after:w-[190%] before:h-[2px] after:h-[2px] before:absolute after:absolute before:-left-4 after:-left-4 before:top-9 after:bottom-5 2xl:before:top-11 2xl:after:bottom-7 before:bg-yellow-500 after:bg-yellow-500 before:z-[-1] after:z-[-1]">skills</span><span ></span></h1>
+      <h1 class="capitalize flowLeft text-red-600 tracking-wider z-10 font-extrabold text-5xl 2xl:text-6xl mb-10 2xl:mb-14" aria-label="Skills"><span class="w-full dark:bg-[#101010] bg-gray-100 z-10 relative before:w-[160%] after:w-[190%] before:h-[2px] after:h-[2px] before:absolute after:absolute before:-left-4 after:-left-4 before:top-9 after:bottom-5 2xl:before:top-11 2xl:after:bottom-7 before:bg-yellow-500 after:bg-yellow-500 before:z-[-1] after:z-[-1]">skills</span><span ></span></h1>
       <div class="mb-7 2xl:mb-11 *:mb-5">
-        <p class="leading-6 flowLeft">On my journey to becoming a full-stack MERN developer, I've built a strong foundation in HTML, CSS, and JavaScript, allowing me to create well-structured and interactive web applications. I specialize in React.js for building dynamic UIs and use Tailwind CSS to streamline styling for a modern and responsive design. To enhance user engagement, I incorporate GSAP and Motion for smooth animations and even work with React Three Fiber (R3F) to integrate 3D elements.</p>
-        <p class="leading-6 flowLeft">For the backend, I develop scalable and efficient applications using Node.js, Express.js, and MongoDB, ensuring seamless communication between the client and server.</p>
+        <p class="leading-6 flowLeft">My development approach blends structure, interactivity, and visual depth. I focus on building dynamic user interfaces that are responsive, accessible, and visually engaging — enhanced with smooth animations and immersive 3D elements where they add value. I enjoy creating seamless frontend experiences that feel intuitive and modern.</p>
+        <p class="leading-6 flowLeft">Behind the scenes, I design efficient server-side systems with clear architecture and strong data flow — ensuring every interaction is fast, secure, and reliable. Whether it’s user authentication, API integration, or database management, I aim to keep backend logic clean, scalable, and purpose-driven.</p>
       </div>
       
       <!-- FRONTEND STACKS -->
@@ -330,7 +329,7 @@
           <!-- html -->
           <div id="html" aria-label="HTML">
             <div>
-              <svg xmlns="http://www.w3.org/2000/svg" aria-label="HTML5" viewBox="0 0 512 512" id="html">
+              <svg xmlns="http://www.w3.org/2000/svg" aria-label="HTML5" viewBox="0 0 512 512">
                 <path fill="#e34f26" d="M71 460L30 0h451l-41 460-185 52"></path>
                 <path fill="#ef652a" d="M256 472l149-41 35-394H256"></path>
                 <path fill="#ebebeb" d="M256 208h-75l-5-58h80V94H114l15 171h127zm-1 147l-63-17-4-45h-56l7 89 116 32z"></path>
@@ -342,7 +341,7 @@
           <!-- css -->
           <div id="css" aria-label="CSS">
             <div>
-              <svg  xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 16 16" id="css">
+              <svg  xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 16 16">
                 <path fill="#2196F3" d="m1 0 1.275 14.4L8 16l5.723-1.599L15 0z"></path>
                 <path fill="#FAFAFA" d="m12.274 4.709-.161 1.809-.486 5.423L8 12.944l-.003.001-3.625-1.004-.253-2.836h1.776l.132 1.471 1.971.532.001-.001 1.974-.532.269-2.451-6.208.017-.176-1.676 6.533-.077.132-1.794-6.84.019-.115-1.669h8.864z"></path>
               </svg>
@@ -352,7 +351,7 @@
           <!-- sass -->
           <div id="sass" aria-label="SASS">
             <div>
-              <svg  xmlns="http://www.w3.org/2000/svg" aria-label="Sass" viewBox="0 0 512 512" id="sass">
+              <svg  xmlns="http://www.w3.org/2000/svg" aria-label="Sass" viewBox="0 0 512 512">
                 <rect width="512" height="512" fill="#c69" rx="15%"></rect>
                 <path fill="#fff" d="M258,88c-96,33-158,100-152,140s66,72,93,93h0c-35,18-79,45-78,80,2,48,54,33,76,19s44-53,30-94c31-8,58,2,66,8,31,22,15,47,4,51s-4,6,3,4,22-12,22-29c0-43-46-63-103-48-33-35-78-51-76-89,1-14,6-50,95-95s152-27,144,14c-12,62-120,104-158,68-2-4-9-7-5,4,20,50,182,27,189-79C410,79,329,64,258,88ZM172,408c-25,8-24-8-23-14,3-17,17-38,59-59C220,373,193,402,172,408Z"></path>
               </svg>
@@ -374,7 +373,7 @@
           <!-- javascript -->
           <div id="javaScript" aria-label="JavaScript">
             <div>
-              <svg  xmlns="http://www.w3.org/2000/svg" aria-label="JavaScript" viewBox="0 0 512 512" id="javascript">
+              <svg  xmlns="http://www.w3.org/2000/svg" aria-label="JavaScript" viewBox="0 0 512 512">
                 <rect width="512" height="512" fill="#f7df1e" rx="15%"></rect>
                 <path d="m324,370c10,17 24,29 47,29 20,0 33,-10 33,-24 0,-16 -13,-22 -35,-32l-12,-5c-35,-15 -58,-33 -58,-72 0,-36 27,-64 70,-64 31,0 53,11 68,39l-37,24c-8,-15 -17,-21 -31,-21 -14,0 -23,9 -23,21 0,14 9,20 30,29l12,5c41,18 64,35 64,76 0,43 -34,67 -80,67 -45,0 -74,-21 -88,-49zm-170,4c8,13 14,25 31,25 16,0 26,-6 26,-30V203h48v164c0,50 -29,72 -72,72 -39,0 -61,-20 -72,-44z"></path>
               </svg>
@@ -384,7 +383,7 @@
           <!-- reactjs -->
           <div id="reactjs" aria-label="React JS">
             <div>
-              <svg  xmlns="http://www.w3.org/2000/svg" id="react" viewBox="0 0 3618.6 3618.6">
+              <svg xmlns="http://www.w3.org/2000/svg" id="react" viewBox="0 0 3618.6 3618.6">
                 <path d="M0 0h3618.6v3618.6H0z" style="fill:#222"></path>
                 <circle cx="1806.5" cy="1807.1" r="302.6" style="fill:#00d8ff"></circle>
                 <path d="M1806.5 1191.9c406.2 0 783.6 58.3 1068.1 156.2 342.8 118 553.6 296.9 553.6 458.9 0 168.8-223.4 358.9-591.5 480.8-278.3 92.2-644.6 140.4-1030.2 140.4-395.4 0-769.7-45.2-1051.2-141.4-356.1-121.7-570.6-314.2-570.6-479.8 0-160.7 201.3-338.2 539.3-456 285.6-99.5 672.3-159.1 1082.5-159.1z" style="fill:none;stroke:#00d8ff;stroke-miterlimit:10;stroke-width:144.7456"></path>
@@ -511,7 +510,7 @@
           <div id="react-three-fiber" aria-label="React-three-fiber">
             <div>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke-linecap="square" stroke-miterlimit="10" version="1.1" viewBox="0 0 226.77 226.77">
-                <g transform="translate(8.964 4.2527)" fill-rule="evenodd" stroke="white" stroke-linecap="butt" stroke-linejoin="round" stroke-width="4">
+                <g transform="translate(8.964 4.2527)" fill-rule="evenodd" class="stroke-black dark:stroke-white" stroke-linecap="butt" stroke-linejoin="round" stroke-width="4">
                   <path d="m63.02 200.61-43.213-174.94 173.23 49.874z"/>
                   <path d="m106.39 50.612 21.591 87.496-86.567-24.945z"/>
                   <path d="m84.91 125.03-10.724-43.465 43.008 12.346z"/>
@@ -545,7 +544,7 @@
 
 
     <main id="projects" class="w-screen overflow-x-clip px-16 max-md:px-10 max-sm:px-5 pt-20 mb-28" aria-label="Project page">
-      <h1 class="capitalize flowLeft text-red-600 tracking-wider z-10 font-extrabold text-5xl 2xl:text-6xl mb-10 2xl:mb-14" aria-label="Projects"><span class="w-full dark:bg-[#101010] bg-gray-300 z-10 relative before:w-[160%] after:w-[190%] before:h-[2px] after:h-[2px] before:absolute after:absolute before:-left-4 after:-left-4 before:top-9 after:bottom-5 2xl:before:top-11 2xl:after:bottom-7 before:bg-yellow-500 after:bg-yellow-500 before:z-[-1] after:z-[-1]">projects</span><span ></span></h1>
+      <h1 class="capitalize flowLeft text-red-600 tracking-wider z-10 font-extrabold text-5xl 2xl:text-6xl mb-10 2xl:mb-14" aria-label="Projects"><span class="w-full dark:bg-[#101010] bg-gray-100 z-10 relative before:w-[160%] after:w-[190%] before:h-[2px] after:h-[2px] before:absolute after:absolute before:-left-4 after:-left-4 before:top-9 after:bottom-5 2xl:before:top-11 2xl:after:bottom-7 before:bg-yellow-500 after:bg-yellow-500 before:z-[-1] after:z-[-1]">projects</span><span ></span></h1>
       <section class="mb-7 2xl:mb-14 *:mb-4">
         <p class="flowLeft leading-6">Every project I’ve worked on has helped me grow as a developer. From creating responsive and user-friendly interfaces to adding smooth animations and backend features, these projects have allowed me to apply what I’ve learned in real-world scenarios. They’ve also improved my understanding of UI/UX design, problem-solving, and writing clean, efficient code.</p>
         <p class="flowLeft leading-6">As a fresher, I see every project as an opportunity to learn, improve, and get closer to becoming a well-rounded developer.</p>
@@ -554,28 +553,31 @@
       <h3 class="text-4xl 2xl:text-5xl flowLeft text-cyan-700 dark:text-cyan-500 font-Kumar mb-7 2xl:mb-11 capitalize">Full-Stack Projects</h3>
       <section id="MERNProjects" class="projects-container">
         <!-- proplanner -->
-        <div class="project-items-animations" aria-label="Task management website">
-          <img loading="lazy" src="./src/assets/proplanner.png" alt="proplanner">
-          <p>A full-stack task management web application designed for efficiency and ease of use. With seamless multi-device login support, you can access and manage your tasks from anywhere, anytime. The platform ensures top-notch security with robust user authentication, keeping your data private and accessible only to you.</p>
-          <div><span class="text-red-500">Tech Stack:</span>  React.js, React-router-dom, Node.js, Express.js, MongoDB, Vite, JWT, Nodemailer and bcrypt</div>
+        <div class="project-items-animations" aria-label="ProPlanner — Task Management App">
+          <img loading="lazy" src="./src/assets/proplanner.png" alt="ProPlanner — Task Management App">
+          <h2>ProPlanner — Task Management App</h2>
+          <p>A full-stack task manager with secure authentication and multi-device login. Easily organize and access tasks anytime, anywhere.</p>
+          <div><span>#React.js</span> <span>#React-router-dom</span> <span>#Node.js</span> <span>#Express.js</span> <span>#MongoDB</span> <span>#JWT</span> <span>#Nodemailer</span> <span>#Bcrypt</span></div>
           <a href="https://proplanner-mu.vercel.app" target="_blank">
             <button class="button" aria-label="Visit proplanner"><span class="z-20">Go To Webpage &#8594;</span></button>
           </a>
         </div>
         <!-- MarkVault -->
-        <div class="project-items-animations" aria-label="Bookmark management website">
-          <img loading="lazy" src="./src/assets/MarkVault.png" alt="Markvault">
-          <p>MarkVault is a full-stack bookmark management web app designed for seamless organization and accessibility. It allows users to save, categorize, and manage their bookmarks efficiently across devices. It ensures secure authentication, multi-device login persistence, and a user-friendly interface for effortless navigation.</p>
-          <div><span class="text-red-500">Tech Stack:</span>  React.js, React-router-dom, react-toastify, Node.js, Express.js, MongoDB (mongoose), Vite</div>
+        <div class="project-items-animations" aria-label="MarkVault — Bookmark Manager">
+          <img loading="lazy" src="./src/assets/MarkVault.png" alt="MarkVault — Bookmark Manager">
+          <h2>MarkVault — Bookmark Manager</h2>
+          <p>Organize and access your bookmarks across devices. Features include categories, secure login, and a smooth user experience.</p>
+          <div><span>#React.js</span> <span>#React-router-dom</span> <span>#React-toastify</span> <span>#Node.js</span> <span>#Express.js</span> <span>#Mongoose ODM</span> <span>#JWT</span> <span>#Nodemailer</span> <span>#Bcrypt</span></div>
           <a href="https://markvault-kappa.vercel.app/" target="_blank">
             <button class="button" aria-label="Visit markvault"><span class="z-20">Go To Webpage &#8594;</span></button>
           </a>
         </div>
         <!-- shortify -->
-        <div class="project-items-animations" aria-label="url shortner website">
-          <img loading="lazy" src="./src/assets/shortify.png" alt="shortify">
-          <p>Shortify is a sleek and efficient URL shortener that transforms long, cumbersome links into concise, shareable URLs. Built with a MERN stack, it offers custom aliases, and seamless redirection. Designed for speed and usability, Shortify simplifies link management with a clean and intuitive interface.</p>
-          <div><span class="text-red-500">Tech Stack:</span>  React.js, react-toastify, Node.js, Express.js, MongoDB (mongoose), Vite</div>
+        <div class="project-items-animations" aria-label="Shortify — URL Shortener">
+          <img loading="lazy" src="./src/assets/shortify.png" alt="Shortify — URL Shortener">
+          <h2>Shortify — URL Shortener</h2>
+          <p>Simplify long links with custom aliases and fast redirects. A clean, user-friendly URL shortener built scalable backend.</p>
+          <div><span>#React.js</span> <span>#React-toastify</span> <span>#Node.js</span> <span>#Express.js</span> <span>#Mongoose ODM</span></div>
           <a href="https://shortify-psi.vercel.app/" target="_blank">
             <button class="button" aria-label="Visit shortify"><span class="z-20">Go To Webpage &#8594;</span></button>
           </a>
@@ -586,37 +588,31 @@
       <h3 class="text-4xl 2xl:text-5xl flowLeft text-cyan-700 dark:text-cyan-500 font-Kumar mb-7 mt-7 2xl:mb-11 capitalize">Frontend Projects</h3>
       <section class="projects-container">
         <!-- music player -->
-        <div class="project-items-animations" aria-label="Galaxy music player">
-          <img loading="lazy" src="./src/assets/aurafy.png" alt="Music Player">
-          <p>Aurafy — Your sleek and personal music player. Upload, organize, and enjoy your favorite audio tracks with intuitive controls, speed adjustments, and a dynamic playlist experience.</p>
-          <div><span class="text-red-500">Tech Stack:</span>  React.js, Tailwind CSS, Native Audio API</div>
+        <div class="project-items-animations" aria-label="Aurafy Music Player">
+          <img loading="lazy" src="./src/assets/aurafy.png" alt="Aurafy Music Player">
+          <h2>Aurafy — Music Player</h2>
+          <p>A sleek music player to upload, organize, and enjoy your tracks with speed controls, smart playlists, and a smooth UI.</p>
+          <div><span>#React.js</span> <span>#Tailwind CSS</span> <span>#Native Audio API</span></div>
           <a href="https://aurafy-ebon.vercel.app/" target="_blank">
-            <button class="button" aria-label="Visit Galaxy music player"><span class="z-20">Go To Webpage &#8594;</span></button>
+            <button class="button" aria-label="Visit aurafy"><span class="z-20">Go To Webpage &#8594;</span></button>
           </a>
         </div>
         <!-- TIC-TAC-TOE -->
-        <div class="project-items-animations" aria-label="Tic tac toe game">
+        <div class="project-items-animations" aria-label="Tic Tac Toe game">
           <img loading="lazy" src="./src/assets/ttt.png" alt="TIC-TAC-TOE">
-          <p>Here's a classic Tic Tac Toe game you can enjoy with friends, family, or loved ones. Test your strategic skills and see who can be the first to line up three X's or O's.</p>
-          <div><span class="text-red-500">Tech Stack:</span>  HTML, SASS and JavaScript</div>
+          <h2>TIC TAC TOE — Classic Game</h2>
+          <p>A modern, feature-rich twist on the classic game, offering dynamic themes, AI or multiplayer modes, and advanced controls for a sleek and strategic gameplay experience.</p>
+          <div><span>#HTML</span> <span>#SASS</span> <span>#JavaScript</span></div>
           <a href="https://tic-tac-toe-sigma-livid.vercel.app/" target="_blank">
             <button class="button" aria-label="Visit tic-tac-toe"><span class="z-20">Go To Webpage &#8594;</span></button>
-          </a>
-        </div>
-        <!-- Calculator -->
-        <div class="project-items-animations" aria-label="Arithmetic calculator website">
-          <img loading="lazy" src="./src/assets/calculator.png" alt="Calculator">
-          <p>A simple arithmetic calculator but smart enough to automatically corrects your input to ensure a valid expression, so you always get the right result. Just type what’s on your mind without worrying about the format. It will fix it for you as you go.</p>
-          <div><span class="text-red-500">Tech Stack:</span>  HTML, CSS and JavaScript</div>
-          <a href="https://pranjul-jangra.github.io/Calculator/" target="_blank">
-            <button class="button" aria-label="Visit calculator"><span class="z-20">Go To Webpage &#8594;</span></button>
           </a>
         </div>
         <!-- rock-paper-scissor -->
         <div class="project-items-animations" aria-label="Rock paper scissor game">
           <img loading="lazy" src="./src/assets/rps.png" alt="Rock-Paper-Scissor">
-          <p>Experience the classic game of Rock, Paper, Scissors, where you face off against the device. Choose your move and see how it stacks up against the device’s choice.</p>
-          <div><span class="text-red-500">Tech Stack:</span>  HTML, SASS, JavaScript and Local Storage</div>
+          <h2>Rock Paper Scissor — Classic Game</h2>
+          <p>A sleek, interactive game featuring multiple difficulty levels, AI strategy, and spaced theme—designed for quick fun or competitive play with real-time stats and smooth animations.</p>
+          <div><span>#HTML</span> <span>#SASS</span> <span>#JavaScript</span></div>
           <a href="https://rock-paper-scissor-tau-seven.vercel.app/" target="_blank">
             <button class="button" aria-label="Visit rock-paper-scissor"><span class="z-20">Go To Webpage &#8594;</span></button>
           </a>
@@ -625,9 +621,37 @@
     </main>
 
 
-    <footer class="border-t-[0.1px] dark:border-white border-black" aria-labelledby="footer-greet">
-      <div id="footer-greet" class="footer flex justify-center items-center text-center min-h-28 2xl:h-28 w-full px-4 py-6">Thank you for taking the time to explore my work! I truly appreciate your visit and hope you found it interesting and inspiring. If you’d like to connect, collaborate, or just have a chat, feel free to reach out. Looking forward to creating something amazing together!</div>
-    </footer>
+    <!-- Footer -->
+    <footer class="border-t border-black dark:bg-zinc-950 bg-gray-900 text-white">
+      <div class="max-w-6xl mx-auto px-6 py-10 flex flex-col md:flex-row justify-between items-center gap-6">
+        <!-- Greeting -->
+        <div class="text-center md:text-left">
+          <h2 class="text-xl font-semibold mb-2">Thanks for stopping by 👋</h2>
+          <p class="text-sm max-w-md">I genuinely appreciate your time. If you'd like to connect, collaborate, or just have a conversation — my inbox is always open!</p>
+        </div>
 
+        <!-- Contact Buttons -->
+        <div class="flex flex-col sm:flex-row items-center gap-4">
+          <a href="mailto:pranjuljan68@gmail.com" class="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-full transition-all duration-300 shadow-md">Say Hello</a>
+          <a href="https://www.linkedin.com/in/pranjul-jangra-107700332/" target="_blank" class="text-sm underline underline-offset-2 hover:text-red-500">Connect on LinkedIn</a>
+        </div>
+
+        <!-- Socials (optional icons) -->
+        <div class="flex items-center space-x-4 text-xl">
+          <a href="https://github.com/yourhandle" target="_blank" aria-label="GitHub" class="hover:text-red-500">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://twitter.com/yourhandle" target="_blank" aria-label="Twitter" class="hover:text-red-500">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://instagram.com/yourhandle" target="_blank" aria-label="Instagram" class="hover:text-red-500">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+      <div class="text-center text-xs text-gray-500 dark:text-gray-400 pb-4">
+        &copy; 2025 Pranjul Jangra. All rights reserved.
+      </div>
+    </footer>
   </body>
 </html>

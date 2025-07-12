@@ -1,29 +1,38 @@
-# 🚀 **Personal Portfolio**
-Welcome to my personal portfolio! This space is dedicated to showcasing my **skills, projects, and passion** for web development. Designed with a keen focus on **performance, aesthetics, and interactivity**, this portfolio reflects my journey as a web developer.  
+# 🚀 Personal Portfolio
 
-## 🔧 **Tech Stack**  
-Built using modern technologies to ensure a **fast, responsive, and visually engaging** experience.  
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-### 🌐 **Core Frontend Technologies**  
-🖥️ **HTML, CSS, and JavaScript** – The backbone of this portfolio, ensuring a solid and structured foundation.  
+Welcome to my portfolio — a curated space to explore my journey, skills, and the projects I've built as a full-stack web developer & frontend developer. This site is crafted with a strong emphasis on performance, accessibility, and interactive design, showcasing not just what I do, but how I approach solving problems through clean, scalable code.
 
-### 🎨 **TailwindCSS**  
-⚡ A utility-first CSS framework that allows for **quick, clean, and highly customizable styling**.  
+---
 
-### 🌀 **GreenSock (GSAP)**  
-✨ Adds **smooth, dynamic animations** that bring the interface to life, creating an engaging user experience.  
+### 🌐 Core Web Technologies
+- **HTML5, CSS3, JavaScript (ES6+)** — Foundational technologies that power structure, style, and interactivity across the portfolio.
 
-### ⚡ **Vite**  
-🚀 Ensures **lightning-fast development** with features like **Hot Module Replacement (HMR)** and optimized builds for **better performance and smaller bundle sizes**.  
+### 🎨 Tailwind CSS
+- A utility-first framework enabling rapid, responsive, and consistent UI design with clean, maintainable styles.
 
-## 🌗 **Smart Theme Switching**  
-🎭 The portfolio **automatically adapts** to your system’s theme, providing a seamless transition between **light and dark modes**—no manual toggling required!  
+### 🎬 GSAP (GreenSock Animation Platform)
+- Powering smooth transitions and interactive animations for a refined user experience without compromising performance.
 
-## 📬 **Get in Touch**  
-I’d love to hear from you! Feel free to connect with me for collaborations, opportunities, or just a friendly chat.  
+### ⚡ Vite
+- Modern frontend tooling for lightning-fast development and production builds, with support for HMR and smaller bundle sizes.
 
-📧 <a href="mailto:pranjuljan68@gmail.com">Email</a>  
-💼 <a href="https://www.linkedin.com/in/pranjul-jangra-107700332/">LinkedIn</a>
+---
 
----  
-💡 *Thanks for visiting! Hope you enjoy exploring my work.* 🚀 
+## 🌓 Adaptive Theme Switching
+
+This site intelligently adapts to your system preferences, supporting both **light** and **dark** modes for a seamless and user-friendly experience — no toggle needed.
+
+---
+
+## 📬 Let’s Connect
+
+I’m always open to collaborations, freelance opportunities, or conversations around web development and creative tech. Feel free to reach out!
+
+- 📧 [Email Me](mailto:pranjuljan68@gmail.com)  
+- 💼 [LinkedIn Profile](https://www.linkedin.com/in/pranjul-jangra-107700332/)
+
+---
+
+> 💡 *Thank you for stopping by — I hope you enjoy browsing through my work as much as I enjoyed building it.*

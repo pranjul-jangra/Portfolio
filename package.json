@@ -10,10 +10,9 @@
     "dev": "vite",
     "build": "vite build",
     "postinstall": "update-browserslist-db",
-    "build:css": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
+    "build:css": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
   },
   "dependencies": {
-    "@tailwindcss/cli": "^4.1.11",
     "gsap": "^3.12.7"
   }
 }
