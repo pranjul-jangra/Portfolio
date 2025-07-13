@@ -6,11 +6,11 @@ gsap.registerPlugin(ScrollTrigger);
 // HOME PAGE ANIMATIONS
 let homeTl = gsap.timeline();
 if (window.innerWidth >= 768) {
-    homeTl.from('.profileImg', { x: () => (window.innerWidth / 2), translate: '-50% 0', opacity: 0.7, duration: 0.7, delay: 0.9 })
+    homeTl.from('.profileImg', { x: () => (window.innerWidth / 2), translate: '-85% 0', opacity: 0.7, duration: 0.7, delay: 0.9 })
         .from('.profileName', { x: -200, opacity: 0, duration: 0.7, scale: 0.7 })
         .from('.profileIntro', { x: -300, opacity: 0, duration: 0.7, scale: 0.5 }, '-=0.7');
 } else {
-    homeTl.from('.profileImg', { y: () => (window.innerHeight / 2), translate: '0 -50%', opacity: 0.7, duration: 0.7, delay: 0.9 })
+    homeTl.from('.profileImg', { y: () => (window.innerHeight / 2), translate: '0 -70%', opacity: 0.7, duration: 0.7, delay: 0.9 })
         .from('.profileName', { x: -200, opacity: 0, duration: 0.7, scale: 0.7 })
         .from('.profileIntro', { x: -300, opacity: 0, duration: 0.7, scale: 0.5 }, '-=0.7');
 }
@@ -21,17 +21,16 @@ logosTl.to('#phoneLogo', { scale: 1, duration: 0.7, delay: 1.2, y: 0 })
     .to('#linkedInLogo', { scale: 1, duration: 0.7, y: 0 }, '-=0.5')
     .to('#githubLogo', { scale: 1, duration: 0.7, y: 0 }, '-=0.5');
 
+// Show/Hide contact options in navbar
 const navSvg = document.querySelector('.navSvg');
 const contactsList = document.querySelector('.contactsList');
 let isHovered = false;
 let swipeAnimation = null;
 
-
 navSvg.addEventListener('mouseenter', () => {
     isHovered = true;
 
-    //this will create an animation if it's not already exists and,
-    //'paused : true' property will pause the animation so that the outer 'play()' will trigger it
+    // Create animation
     if (!swipeAnimation) {
         if (window.innerWidth >= 1536) {
             swipeAnimation = gsap.to(contactsList, { top: '7rem', duration: 0.55, paused: true });
@@ -40,8 +39,10 @@ navSvg.addEventListener('mouseenter', () => {
         }
     }
 
-    swipeAnimation.timeScale(1).play(); // Play the existing animation
+    // Trigger animation
+    swipeAnimation.timeScale(1).play();
 });
+
 navSvg.addEventListener('mouseleave', () => { isHovered = false; checkIsHovered(); });
 contactsList.addEventListener('mouseenter', () => isHovered = true);
 contactsList.addEventListener('mouseleave', () => { isHovered = false; checkIsHovered(); });
@@ -49,7 +50,7 @@ contactsList.addEventListener('mouseleave', () => { isHovered = false; checkIsHo
 function checkIsHovered() {
     setTimeout(() => {
         if (!isHovered && swipeAnimation) swipeAnimation.timeScale(2).reverse();
-    }, 400)
+    }, 400);
 }
 
 
@@ -70,142 +71,8 @@ gsap.utils.toArray(".flowLeft").forEach(element => {
     });
 });
 
-gsap.utils.toArray(".moveUp").forEach(element => {
-    gsap.from(element, {
-        y: 50,
-        opacity: 0,
-        scale: 0.6,
-        scrollTrigger: {
-            trigger: element,
-            start: "top 90%",
-            end: "top 81%",
-            toggleActions: "play none none reverse"
-        }
-    });
-});
-
-// TIMELINE WITH SCROLL TRIGGER
-if (window.innerWidth >= 768) {
-    //achievements (js test)
-    const jsTl = gsap.timeline({
-        scrollTrigger: {
-            trigger: "#jsTest",
-            start: "top 80%",
-            end: "top 50%",
-            toggleActions: "play none none reverse",
-        }
-    });
-    jsTl.from('.jsIntro', { y: 80, opacity: 0, duration: 0.5 })
-        .from('.jsBadge', { y: 80, opacity: 0, duration: 0.5 }, '-=0.2')
-        .from('.jsProgress', { y: 80, opacity: 0, duration: 0.5 }, '-=0.2');
-
-    //achievements (MongoDB test)
-    const MongoDBTL = gsap.timeline({
-        scrollTrigger: {
-            trigger: "#MongoDBTest",
-            start: "top 80%",
-            end: "top 50%",
-            toggleActions: "play none none reverse",
-        }
-    });
-    MongoDBTL.from('.MongoDBIntro', { y: 80, opacity: 0, duration: 0.5 })
-        .from('.MongoDBBadge', { y: 80, opacity: 0, duration: 0.5 }, '-=0.2')
-        .from('.MongoDBProgress', { y: 80, opacity: 0, duration: 0.5 }, '-=0.2');
-
-    //achievements (React.js test)
-    const ReactTl = gsap.timeline({
-        scrollTrigger: {
-            trigger: "#reactTest",
-            start: "top 80%",
-            end: "top 50%",
-            toggleActions: "play none none reverse",
-        }
-    });
-    ReactTl.from('.reactIntro', { y: 80, opacity: 0, duration: 0.5 })
-        .from('.reactBadge', { y: 80, opacity: 0, duration: 0.5 }, '-=0.2')
-        .from('.reactProgress', { y: 80, opacity: 0, duration: 0.5 }, '-=0.2');
-
-    //achievements (Node.js test)
-    const nodeTl = gsap.timeline({
-        scrollTrigger: {
-            trigger: "#nodeTest",
-            start: "top 80%",
-            end: "top 50%",
-            toggleActions: "play none none reverse",
-        }
-    });
-    nodeTl.from('.nodeIntro', { y: 80, opacity: 0, duration: 0.5 })
-        .from('.nodeBadge', { y: 80, opacity: 0, duration: 0.5 }, '-=0.2')
-        .from('.nodeProgress', { y: 80, opacity: 0, duration: 0.5 }, '-=0.2');
-
-} else {
-    gsap.utils.toArray('.animationBelow768').forEach(element => {
-        gsap.from(element, {
-            y: 80,
-            opacity: 0,
-            duration: 0.5,
-            scrollTrigger: {
-                trigger: element,
-                start: 'top 80%',
-                end: 'top 60%',
-                toggleActions: 'play none none reverse'
-            }
-        })
-    })
-}
-
-
-//SKILLS (FRONTEND)
-const frontendTl = gsap.timeline({
-    scrollTrigger: {
-        trigger: "#frontend",
-        start: "top 80%",
-        end: "top 50%",
-        toggleActions: "play none none reverse",
-    }
-});
-
-frontendTl.from('#html', { y: 50, opacity: 0, duration: 0.4 })
-    .from('#css', { y: 50, opacity: 0, duration: 0.4 }, '-=0.2')
-    .from('#sass', { y: 50, opacity: 0, duration: 0.4 }, '-=0.2')
-    .from('#tailwind', { y: 50, opacity: 0, duration: 0.4 }, '-=0.2')
-    .from('#javaScript', { y: 50, opacity: 0, duration: 0.4 }, '-=0.2')
-    .from('#reactjs', { y: 50, opacity: 0, duration: 0.4 }, '-=0.2')
-
-//SKILLS (BACKEND)
-const backendTl = gsap.timeline({
-    scrollTrigger: {
-        trigger: "#backend",
-        start: "top 80%",
-        end: "top 50%",
-        toggleActions: "play none none reverse",
-    }
-});
-
-backendTl.from('#nodejs', { y: 50, opacity: 0, duration: 0.4 })
-    .from('#expressjs', { y: 50, opacity: 0, duration: 0.4 }, '-=0.2')
-    .from('#mongodb', { y: 50, opacity: 0, duration: 0.4 }, '-=0.2')
-
-//SKILLS (OTHER STACKS)
-const otherStacksTl = gsap.timeline({
-    scrollTrigger: {
-        trigger: "#otherStacks",
-        start: "top 80%",
-        end: "top 50%",
-        toggleActions: "play none none reverse",
-    }
-});
-
-otherStacksTl.from('#git', { y: 50, opacity: 0, duration: 0.4 })
-    .from('#github', { y: 50, opacity: 0, duration: 0.4 }, '-=0.2')
-    .from('#gsap', { y: 50, opacity: 0, duration: 0.4 }, '-=0.2')
-    .from('#vite', { y: 50, opacity: 0, duration: 0.4 }, '-=0.2')
-    .from('#react-three-fiber', { y: 50, opacity: 0, duration: 0.4 }, '-=0.2')
-    .from('#Motion', { y: 50, opacity: 0, duration: 0.4 }, '-=0.2')
-
-
-//PROJECT ANIMATIONS
-gsap.utils.toArray('.project-items-animations').forEach((item) => {
+// PROJECT ANIMATIONS
+gsap.utils.toArray('.animate-upward').forEach((item) => {
     gsap.from(item, {
         y: 50,
         opacity: 0,
