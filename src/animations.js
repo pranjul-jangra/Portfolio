@@ -61,7 +61,7 @@ gsap.utils.toArray(".flowLeft").forEach(element => {
         y: 10,
         scale: 0.7,
         opacity: 0,
-        duration: 0.6,
+        duration: 0.8,
         scrollTrigger: {
             trigger: element,
             start: "top 90%",
@@ -76,7 +76,7 @@ gsap.utils.toArray('.animate-upward').forEach((item) => {
     gsap.from(item, {
         y: 50,
         opacity: 0,
-        duration: 0.4,
+        duration: 1,
         scrollTrigger: {
             trigger: item,
             start: 'top 80%',
